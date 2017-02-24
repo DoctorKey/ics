@@ -1,0 +1,884 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AND	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+Assert	include/debug.h	24;"	d
+BANK_WIDTH	src/memory/dram.c	13;"	d	file:
+BMR_PORT	src/device/ide.c	8;"	d	file:
+BURST_LEN	src/memory/burst.h	4;"	d
+BURST_MASK	src/memory/burst.h	5;"	d
+CF	include/cpu/reg.h	/^			uint32_t CF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+CH_OFFSET	src/device/serial.c	7;"	d	file:
+COL_WIDTH	src/memory/dram.c	11;"	d	file:
+CPU_state	include/cpu/reg.h	/^} CPU_state;$/;"	t	typeref:union:__anon16
+CRTC_Mode_Control_Register	src/device/vga.c	/^   	CRTC_Mode_Control_Register, Line_Compare_Register$/;"	e	enum:__anon7	file:
+CTR_COL	src/device/vga.c	34;"	d	file:
+CTR_ROW	src/device/vga.c	33;"	d	file:
+Color	src/device/vga.h	/^} Color;$/;"	t	typeref:union:__anon1
+Cursor_End_Register	src/device/vga.c	/^   	Maximum_Scan_Line_Register, Cursor_Start_Register, Cursor_End_Register,$/;"	e	enum:__anon7	file:
+Cursor_Location_High_Register	src/device/vga.c	/^   	Start_Address_High_Register, Start_Address_Low_Register, Cursor_Location_High_Register,$/;"	e	enum:__anon7	file:
+Cursor_Location_Low_Register	src/device/vga.c	/^   	Cursor_Location_Low_Register, Vertical_Retrace_Start_Register,$/;"	e	enum:__anon7	file:
+Cursor_Start_Register	src/device/vga.c	/^   	Maximum_Scan_Line_Register, Cursor_Start_Register, Cursor_End_Register,$/;"	e	enum:__anon7	file:
+DATA_BYTE	src/cpu/decode/decode.c	11;"	d	file:
+DATA_BYTE	src/cpu/decode/decode.c	13;"	d	file:
+DATA_BYTE	src/cpu/decode/decode.c	15;"	d	file:
+DATA_BYTE	src/cpu/decode/decode.c	17;"	d	file:
+DATA_BYTE	src/cpu/decode/decode.c	7;"	d	file:
+DATA_BYTE	src/cpu/decode/decode.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/dec.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/div.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/idiv.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/imul.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/inc.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/mul.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/arith/neg.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/mov.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/data-mov/xchg.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/and.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/not.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/or.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/sar.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shl.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shr.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/shrd.c	9;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	11;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	13;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	3;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	5;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	7;"	d	file:
+DATA_BYTE	src/cpu/exec/logic/xor.c	9;"	d	file:
+DATA_TYPE	include/cpu/exec/template-end.h	2;"	d
+DATA_TYPE	include/cpu/exec/template-start.h	12;"	d
+DATA_TYPE	include/cpu/exec/template-start.h	18;"	d
+DATA_TYPE	include/cpu/exec/template-start.h	6;"	d
+DATA_TYPE_S	include/cpu/exec/template-end.h	3;"	d
+DATA_TYPE_S	include/cpu/exec/template-start.h	13;"	d
+DATA_TYPE_S	include/cpu/exec/template-start.h	19;"	d
+DATA_TYPE_S	include/cpu/exec/template-start.h	7;"	d
+DEBUG	include/common.h	9;"	d
+DEREF	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+DF	include/cpu/reg.h	/^			uint32_t DF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+EFLAGS	include/cpu/reg.h	/^		}EFLAGS;$/;"	m	struct:__anon16::__anon18	typeref:struct:__anon16::__anon18::__anon19
+END	include/monitor/monitor.h	/^enum { STOP, RUNNING, END };$/;"	e	enum:__anon29
+ENTRY_START	src/monitor/monitor.c	3;"	d	file:
+EQ	src/monitor/debug/expr.c	/^	NOTYPE = 256, EQ$/;"	e	enum:__anon11	file:
+End_Horizontal_Blanking_Register	src/device/vga.c	/^	Start_Horizontal_Blanking_Register, End_Horizontal_Blanking_Register,$/;"	e	enum:__anon7	file:
+End_Horizontal_Display_Register	src/device/vga.c	/^enum {Horizontal_Total_Register, End_Horizontal_Display_Register, $/;"	e	enum:__anon7	file:
+End_Horizontal_Retrace_Register	src/device/vga.c	/^   	Start_Horizontal_Retrace_Register, End_Horizontal_Retrace_Register,$/;"	e	enum:__anon7	file:
+End_Vertical_Blanking	src/device/vga.c	/^   	Underline_Location_Register, Start_Vertical_Blanking_Register, End_Vertical_Blanking,$/;"	e	enum:__anon7	file:
+HW_MEM_SIZE	include/memory/memory.h	6;"	d
+HW_MEM_SIZE	src/memory/dram.c	32;"	d	file:
+Horizontal_Total_Register	src/device/vga.c	/^enum {Horizontal_Total_Register, End_Horizontal_Display_Register, $/;"	e	enum:__anon7	file:
+I8042_DATA_PORT	src/device/keyboard.c	5;"	d	file:
+IDE_CTRL_PORT	src/device/ide.c	6;"	d	file:
+IDE_IRQ	src/device/ide.c	10;"	d	file:
+IDE_PORT	src/device/ide.c	7;"	d	file:
+IF	include/cpu/reg.h	/^			uint32_t IF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+IMR	src/device/i8259.c	/^	uint8_t IMR;		\/* interrupt mask register *\/$/;"	m	struct:__anon3	file:
+IRQ_BASE	src/device/i8259.c	4;"	d	file:
+IRR	src/device/i8259.c	/^	uint8_t IRR;		\/* interrupt request register *\/$/;"	m	struct:__anon3	file:
+ISR	src/device/i8259.c	/^	uint8_t ISR;		\/* interrupt service register *\/$/;"	m	struct:__anon3	file:
+KEYBOARD_IRQ	src/device/keyboard.c	6;"	d	file:
+K_0	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_1	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_2	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_3	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_4	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_5	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_6	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_7	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_8	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_9	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_BACK	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_BACKQUOTE	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_BACKSLASH	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_CAPSLOCK	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_COMMA	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_DELETE	src/device/sdl.h	/^	K_DOWN, K_PAGEDOWN, K_INSERT, K_DELETE, \/*UNDEF, UNDEF, UNDEF,*\/ K_F11 = 0x57,$/;"	e	enum:__anon4
+K_DOWN	src/device/sdl.h	/^	K_DOWN, K_PAGEDOWN, K_INSERT, K_DELETE, \/*UNDEF, UNDEF, UNDEF,*\/ K_F11 = 0x57,$/;"	e	enum:__anon4
+K_END	src/device/sdl.h	/^	K_UP, K_PAGEUP, \/*UNDEF,*\/ K_LEFT = 0x4b, \/*UNDEF,*\/ K_RIGHT = 0x4d, \/*UNDEF,*\/ K_END = 0x4f, $/;"	e	enum:__anon4
+K_ENTER	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_EQUALS	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_ESC	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+K_F1	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_F10	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_F11	src/device/sdl.h	/^	K_DOWN, K_PAGEDOWN, K_INSERT, K_DELETE, \/*UNDEF, UNDEF, UNDEF,*\/ K_F11 = 0x57,$/;"	e	enum:__anon4
+K_F12	src/device/sdl.h	/^	K_F12$/;"	e	enum:__anon4
+K_F2	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_F3	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_F4	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_F5	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_F6	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_F7	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_F8	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_F9	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_HOME	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_INSERT	src/device/sdl.h	/^	K_DOWN, K_PAGEDOWN, K_INSERT, K_DELETE, \/*UNDEF, UNDEF, UNDEF,*\/ K_F11 = 0x57,$/;"	e	enum:__anon4
+K_LALT	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_LCTRL	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_LEFT	src/device/sdl.h	/^	K_UP, K_PAGEUP, \/*UNDEF,*\/ K_LEFT = 0x4b, \/*UNDEF,*\/ K_RIGHT = 0x4d, \/*UNDEF,*\/ K_END = 0x4f, $/;"	e	enum:__anon4
+K_LEFTBRACKET	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_LSHIFT	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_MINUS	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_NUMLOCK	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_PAGEDOWN	src/device/sdl.h	/^	K_DOWN, K_PAGEDOWN, K_INSERT, K_DELETE, \/*UNDEF, UNDEF, UNDEF,*\/ K_F11 = 0x57,$/;"	e	enum:__anon4
+K_PAGEUP	src/device/sdl.h	/^	K_UP, K_PAGEUP, \/*UNDEF,*\/ K_LEFT = 0x4b, \/*UNDEF,*\/ K_RIGHT = 0x4d, \/*UNDEF,*\/ K_END = 0x4f, $/;"	e	enum:__anon4
+K_PERIOD	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_QUOTE	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_RIGHT	src/device/sdl.h	/^	K_UP, K_PAGEUP, \/*UNDEF,*\/ K_LEFT = 0x4b, \/*UNDEF,*\/ K_RIGHT = 0x4d, \/*UNDEF,*\/ K_END = 0x4f, $/;"	e	enum:__anon4
+K_RIGHTBRACKET	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_RSHIFT	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_SCROLLOCK	src/device/sdl.h	/^	K_F6, K_F7, K_F8, K_F9, K_F10, K_NUMLOCK, K_SCROLLOCK, K_HOME, $/;"	e	enum:__anon4
+K_SEMICOLON	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_SLASH	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_SPACE	src/device/sdl.h	/^	K_LALT = 0x38, K_SPACE, K_CAPSLOCK, K_F1, K_F2, K_F3, K_F4, K_F5,$/;"	e	enum:__anon4
+K_TAB	src/device/sdl.h	/^	K_7, K_8, K_9, K_0, K_MINUS, K_EQUALS, K_BACK, K_TAB,$/;"	e	enum:__anon4
+K_UP	src/device/sdl.h	/^	K_UP, K_PAGEUP, \/*UNDEF,*\/ K_LEFT = 0x4b, \/*UNDEF,*\/ K_RIGHT = 0x4d, \/*UNDEF,*\/ K_END = 0x4f, $/;"	e	enum:__anon4
+K_a	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_b	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_c	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_d	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_e	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_f	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_g	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_h	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_i	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_j	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_k	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_l	src/device/sdl.h	/^	K_d, K_f, K_g, K_h, K_j, K_k, K_l, K_SEMICOLON,$/;"	e	enum:__anon4
+K_m	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_n	src/device/sdl.h	/^	K_b, K_n, K_m, K_COMMA, K_PERIOD, K_SLASH, K_RSHIFT, \/*UNDEF, *\/$/;"	e	enum:__anon4
+K_o	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_p	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_q	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_r	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_s	src/device/sdl.h	/^	K_o, K_p, K_LEFTBRACKET, K_RIGHTBRACKET, K_ENTER, K_LCTRL, K_a, K_s,$/;"	e	enum:__anon4
+K_t	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_u	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_v	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_w	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_x	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+K_y	src/device/sdl.h	/^	K_q, K_w, K_e, K_r, K_t, K_y, K_u, K_i,$/;"	e	enum:__anon4
+K_z	src/device/sdl.h	/^	K_QUOTE, K_BACKQUOTE, K_LSHIFT, K_BACKSLASH, K_z, K_x, K_c, K_v,$/;"	e	enum:__anon4
+LOG_FILE	include/common.h	10;"	d
+LSR_OFFSET	src/device/serial.c	8;"	d	file:
+Line_Compare_Register	src/device/vga.c	/^   	CRTC_Mode_Control_Register, Line_Compare_Register$/;"	e	enum:__anon7	file:
+Log	include/debug.h	15;"	d
+Log_write	include/debug.h	10;"	d
+Log_write	include/debug.h	12;"	d
+MASK	src/device/i8259.c	6;"	d	file:
+MAX_INSTR_TO_PRINT	src/monitor/cpu-exec.c	11;"	d	file:
+MEM_R	include/cpu/exec/template-end.h	8;"	d
+MEM_R	include/cpu/exec/template-start.h	30;"	d
+MEM_W	include/cpu/exec/template-end.h	9;"	d
+MEM_W	include/cpu/exec/template-start.h	31;"	d
+MMIO_SPACE_MAX	src/device/io/mmio.c	5;"	d	file:
+MMIO_t	src/device/io/mmio.c	/^} MMIO_t;$/;"	t	typeref:struct:__anon5	file:
+MODRM_ASM_BUF_SIZE	include/cpu/decode/modrm.h	34;"	d
+MSB	include/cpu/exec/template-end.h	13;"	d
+MSB	include/cpu/exec/template-start.h	35;"	d
+Maximum_Scan_Line_Register	src/device/vga.c	/^   	Maximum_Scan_Line_Register, Cursor_Start_Register, Cursor_End_Register,$/;"	e	enum:__anon7	file:
+ModR_M	include/cpu/decode/modrm.h	/^} ModR_M;$/;"	t	typeref:union:__anon20
+NEQ	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+NO	include/monitor/watchpoint.h	/^	int NO;$/;"	m	struct:watchpoint
+NOR	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+NOTYPE	src/monitor/debug/expr.c	/^	NOTYPE = 256, EQ$/;"	e	enum:__anon11	file:
+NO_INTR	src/device/i8259.c	5;"	d	file:
+NR_BANK	src/memory/dram.c	29;"	d	file:
+NR_CMD	src/monitor/debug/ui.c	156;"	d	file:
+NR_COL	src/memory/dram.c	27;"	d	file:
+NR_MAP	src/device/io/mmio.c	6;"	d	file:
+NR_MAP	src/device/io/port-io.c	5;"	d	file:
+NR_RANK	src/memory/dram.c	30;"	d	file:
+NR_REGEX	src/monitor/debug/expr.c	42;"	d	file:
+NR_ROW	src/memory/dram.c	28;"	d	file:
+NR_WP	src/monitor/debug/watchpoint.c	4;"	d	file:
+NUM_10	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+NUM_16	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+OF	include/cpu/reg.h	/^			uint32_t OF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+OPERAND_W	include/cpu/exec/template-end.h	11;"	d
+OPERAND_W	include/cpu/exec/template-start.h	33;"	d
+OP_STR_SIZE	include/cpu/decode/operand.h	6;"	d
+OP_TYPE_IMM	include/cpu/decode/operand.h	/^enum { OP_TYPE_REG, OP_TYPE_MEM, OP_TYPE_IMM };$/;"	e	enum:__anon25
+OP_TYPE_MEM	include/cpu/decode/operand.h	/^enum { OP_TYPE_REG, OP_TYPE_MEM, OP_TYPE_IMM };$/;"	e	enum:__anon25
+OP_TYPE_REG	include/cpu/decode/operand.h	/^enum { OP_TYPE_REG, OP_TYPE_MEM, OP_TYPE_IMM };$/;"	e	enum:__anon25
+OR	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+Offset_Register	src/device/vga.c	/^   	Vertical_Retrace_End_Register, Vertical_Display_End_Register, Offset_Register,$/;"	e	enum:__anon7	file:
+Operand	include/cpu/decode/operand.h	/^} Operand;$/;"	t	typeref:struct:__anon26
+Operands	include/cpu/decode/operand.h	/^} Operands;$/;"	t	typeref:struct:__anon28
+Overflow_Register	src/device/vga.c	/^   	Vertical_Total_Register, Overflow_Register, Preset_Row_Scan_Register,$/;"	e	enum:__anon7	file:
+PF	include/cpu/reg.h	/^			uint32_t PF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+PIO_t	src/device/io/port-io.c	/^} PIO_t;$/;"	t	typeref:struct:__anon6	file:
+PORT_IO_SPACE_MAX	src/device/io/port-io.c	4;"	d	file:
+Preset_Row_Scan_Register	src/device/vga.c	/^   	Vertical_Total_Register, Overflow_Register, Preset_Row_Scan_Register,$/;"	e	enum:__anon7	file:
+RANK_WIDTH	src/memory/dram.c	14;"	d	file:
+RB	src/memory/dram.c	/^} RB;$/;"	t	typeref:struct:__anon10	file:
+REG	include/cpu/exec/template-end.h	5;"	d
+REG	include/cpu/exec/template-start.h	27;"	d
+REG	src/monitor/debug/expr.c	/^	,NUM_10,NUM_16,REG,NEQ,AND,OR,NOR,DEREF$/;"	e	enum:__anon11	file:
+REG_NAME	include/cpu/exec/template-end.h	6;"	d
+REG_NAME	include/cpu/exec/template-start.h	28;"	d
+RET_DATA_TYPE	src/cpu/exec/arith/imul-template.h	4;"	d
+RET_DATA_TYPE	src/cpu/exec/arith/imul-template.h	58;"	d
+RET_DATA_TYPE	src/cpu/exec/arith/imul-template.h	6;"	d
+RET_DATA_TYPE	src/cpu/exec/arith/imul-template.h	8;"	d
+ROW_WIDTH	src/memory/dram.c	12;"	d	file:
+RUNNING	include/monitor/monitor.h	/^enum { STOP, RUNNING, END };$/;"	e	enum:__anon29
+R_AH	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_AL	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_AX	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_BH	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_BL	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_BP	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_BX	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_CH	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_CL	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_CX	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_DH	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_DI	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_DL	include/cpu/reg.h	/^enum { R_AL, R_CL, R_DL, R_BL, R_AH, R_CH, R_DH, R_BH };$/;"	e	enum:__anon15
+R_DX	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_EAX	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_EBP	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_EBX	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_ECX	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_EDI	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_EDX	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_ESI	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_ESP	include/cpu/reg.h	/^enum { R_EAX, R_ECX, R_EDX, R_EBX, R_ESP, R_EBP, R_ESI, R_EDI };$/;"	e	enum:__anon13
+R_M	include/cpu/decode/modrm.h	/^		uint8_t R_M		:3;$/;"	m	struct:__anon20::__anon21
+R_SI	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+R_SP	include/cpu/reg.h	/^enum { R_AX, R_CX, R_DX, R_BX, R_SP, R_BP, R_SI, R_DI };$/;"	e	enum:__anon14
+SCREEN_COL	src/device/vga.h	8;"	d
+SCREEN_ROW	src/device/vga.h	7;"	d
+SERIAL_PORT	src/device/serial.c	6;"	d	file:
+SF	include/cpu/reg.h	/^			uint32_t SF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+SIB	include/cpu/decode/modrm.h	/^} SIB;$/;"	t	typeref:union:__anon23
+STOP	include/monitor/monitor.h	/^enum { STOP, RUNNING, END };$/;"	e	enum:__anon29
+SUFFIX	include/cpu/exec/template-end.h	1;"	d
+SUFFIX	include/cpu/exec/template-start.h	11;"	d
+SUFFIX	include/cpu/exec/template-start.h	17;"	d
+SUFFIX	include/cpu/exec/template-start.h	5;"	d
+Start_Address_High_Register	src/device/vga.c	/^   	Start_Address_High_Register, Start_Address_Low_Register, Cursor_Location_High_Register,$/;"	e	enum:__anon7	file:
+Start_Address_Low_Register	src/device/vga.c	/^   	Start_Address_High_Register, Start_Address_Low_Register, Cursor_Location_High_Register,$/;"	e	enum:__anon7	file:
+Start_Horizontal_Blanking_Register	src/device/vga.c	/^	Start_Horizontal_Blanking_Register, End_Horizontal_Blanking_Register,$/;"	e	enum:__anon7	file:
+Start_Horizontal_Retrace_Register	src/device/vga.c	/^   	Start_Horizontal_Retrace_Register, End_Horizontal_Retrace_Register,$/;"	e	enum:__anon7	file:
+Start_Vertical_Blanking_Register	src/device/vga.c	/^   	Underline_Location_Register, Start_Vertical_Blanking_Register, End_Vertical_Blanking,$/;"	e	enum:__anon7	file:
+TIMER_HZ	src/device/sdl.c	15;"	d	file:
+TIMER_IRQ	src/device/timer.c	4;"	d	file:
+Token	src/monitor/debug/expr.c	/^} Token;$/;"	t	typeref:struct:token	file:
+UNDEF	src/device/sdl.h	/^	UNDEF, K_ESC, K_1, K_2, K_3, K_4, K_5, K_6, $/;"	e	enum:__anon4
+USE_RAMDISK	include/common.h	4;"	d
+Underline_Location_Register	src/device/vga.c	/^   	Underline_Location_Register, Start_Vertical_Blanking_Register, End_Vertical_Blanking,$/;"	e	enum:__anon7	file:
+VGA_CRTC_DATA	src/device/vga.c	31;"	d	file:
+VGA_CRTC_INDEX	src/device/vga.c	30;"	d	file:
+VGA_DAC_DATA	src/device/vga.c	28;"	d	file:
+VGA_DAC_READ_INDEX	src/device/vga.c	26;"	d	file:
+VGA_DAC_WRITE_INDEX	src/device/vga.c	27;"	d	file:
+VGA_HZ	src/device/vga.h	9;"	d
+Vertical_Display_End_Register	src/device/vga.c	/^   	Vertical_Retrace_End_Register, Vertical_Display_End_Register, Offset_Register,$/;"	e	enum:__anon7	file:
+Vertical_Retrace_End_Register	src/device/vga.c	/^   	Vertical_Retrace_End_Register, Vertical_Display_End_Register, Offset_Register,$/;"	e	enum:__anon7	file:
+Vertical_Retrace_Start_Register	src/device/vga.c	/^   	Cursor_Location_Low_Register, Vertical_Retrace_Start_Register,$/;"	e	enum:__anon7	file:
+Vertical_Total_Register	src/device/vga.c	/^   	Vertical_Total_Register, Overflow_Register, Preset_Row_Scan_Register,$/;"	e	enum:__anon7	file:
+WP	include/monitor/watchpoint.h	/^} WP;$/;"	t	typeref:struct:watchpoint
+ZF	include/cpu/reg.h	/^			uint32_t ZF:1;$/;"	m	struct:__anon16::__anon18::__anon19
+_1	include/common.h	/^	uint8_t _1;$/;"	m	union:__anon30
+_16	include/cpu/reg.h	/^		uint16_t _16;$/;"	m	union:__anon16::__anon17
+_2	include/common.h	/^	uint16_t _2;$/;"	m	union:__anon30
+_2byte_opcode_table	src/cpu/exec/exec.c	/^helper_fun _2byte_opcode_table [256] = {$/;"	v
+_32	include/cpu/reg.h	/^		uint32_t _32;$/;"	m	union:__anon16::__anon17
+_4	include/common.h	/^	uint32_t _4;$/;"	m	union:__anon30
+_8	include/cpu/reg.h	/^		uint8_t _8[2];$/;"	m	union:__anon16::__anon17
+__AND_H__	src/cpu/exec/logic/and.h	2;"	d
+__BURST_H__	src/memory/burst.h	2;"	d
+__COMMON_H__	include/common.h	2;"	d
+__DEBUG_H__	include/debug.h	2;"	d
+__DECODE_H__	include/cpu/decode/decode.h	2;"	d
+__DEC_H__	src/cpu/exec/arith/dec.h	2;"	d
+__DIV_H__	src/cpu/exec/arith/div.h	2;"	d
+__EXEC_HELPER_H__	include/cpu/exec/helper.h	2;"	d
+__EXPR_H__	include/monitor/expr.h	2;"	d
+__HELPER_H__	include/cpu/helper.h	2;"	d
+__I8259_H__	include/device/i8259.h	2;"	d
+__IDIV_H__	src/cpu/exec/arith/idiv.h	2;"	d
+__IMUL_H__	src/cpu/exec/arith/imul.h	2;"	d
+__INC_H__	src/cpu/exec/arith/inc.h	2;"	d
+__LIB_MISC_H__	include/misc.h	2;"	d
+__MACRO_H__	include/macro.h	2;"	d
+__MEMORY_H__	include/memory/memory.h	2;"	d
+__MISC_H__	src/cpu/exec/misc/misc.h	2;"	d
+__MMIO_H__	include/device/mmio.h	2;"	d
+__MODRM_H__	include/cpu/decode/modrm.h	2;"	d
+__MONITOR_H__	include/monitor/monitor.h	2;"	d
+__MOV_H__	src/cpu/exec/data-mov/mov.h	2;"	d
+__MUL_H__	src/cpu/exec/arith/mul.h	2;"	d
+__NEG_H__	src/cpu/exec/arith/neg.h	2;"	d
+__NEMU_H__	include/nemu.h	2;"	d
+__NOT_H__	src/cpu/exec/logic/not.h	2;"	d
+__OPERAND_H__	include/cpu/decode/operand.h	2;"	d
+__OR_H__	src/cpu/exec/logic/or.h	2;"	d
+__PORT_IO_H__	include/device/port-io.h	2;"	d
+__PREFIX_H__	src/cpu/exec/prefix/prefix.h	2;"	d
+__REG_H__	include/cpu/reg.h	2;"	d
+__REP_H__	src/cpu/exec/string/rep.h	2;"	d
+__SAR_H__	src/cpu/exec/logic/sar.h	2;"	d
+__SDL_H__	src/device/sdl.h	2;"	d
+__SHL_H__	src/cpu/exec/logic/shl.h	2;"	d
+__SHRD_H__	src/cpu/exec/logic/shrd.h	2;"	d
+__SHR_H__	src/cpu/exec/logic/shr.h	2;"	d
+__SPECIAL_H__	src/cpu/exec/special/special.h	2;"	d
+__VGA_H__	src/device/vga.h	2;"	d
+__WATCHPOINT_H__	include/monitor/watchpoint.h	2;"	d
+__XCHG_H__	src/cpu/exec/data-mov/xchg.h	2;"	d
+__XOR_H__	src/cpu/exec/logic/xor.h	2;"	d
+a	src/device/vga.h	/^		uint8_t r, g, b, a;$/;"	m	struct:__anon1::__anon2
+add_mmio_map	src/device/io/mmio.c	/^void* add_mmio_map(hwaddr_t addr, size_t len, mmio_callback_t callback) {$/;"	f
+add_pio_map	src/device/io/port-io.c	/^void* add_pio_map(ioaddr_t addr, size_t len, pio_callback_t callback) {$/;"	f
+addr	include/cpu/decode/operand.h	/^		swaddr_t addr;$/;"	m	union:__anon26::__anon27
+addr	src/memory/dram.c	/^	uint32_t addr;$/;"	m	union:__anon8	file:
+and_i2a_b	src/cpu/exec/logic/and.h	/^make_helper(and_i2a_b);$/;"	v
+and_i2a_v	src/cpu/exec/logic/and.h	/^make_helper(and_i2a_v);$/;"	v
+and_i2rm_b	src/cpu/exec/logic/and.h	/^make_helper(and_i2rm_b);$/;"	v
+and_i2rm_v	src/cpu/exec/logic/and.h	/^make_helper(and_i2rm_v);$/;"	v
+and_r2rm_b	src/cpu/exec/logic/and.h	/^make_helper(and_r2rm_b);$/;"	v
+and_r2rm_v	src/cpu/exec/logic/and.h	/^make_helper(and_r2rm_v);$/;"	v
+and_rm2r_b	src/cpu/exec/logic/and.h	/^make_helper(and_rm2r_b);$/;"	v
+and_rm2r_v	src/cpu/exec/logic/and.h	/^make_helper(and_rm2r_v);$/;"	v
+and_si2rm_v	src/cpu/exec/logic/and.h	/^make_helper(and_si2rm_v);$/;"	v
+asm_buf	src/monitor/cpu-exec.c	/^char asm_buf[128];$/;"	v
+assembly	src/monitor/cpu-exec.c	/^char assembly[80];$/;"	v
+b	src/device/vga.h	/^		uint8_t r, g, b, a;$/;"	m	struct:__anon1::__anon2
+bank	src/memory/dram.c	/^		uint32_t bank	: BANK_WIDTH;$/;"	m	struct:__anon8::__anon9	file:
+base	include/cpu/decode/modrm.h	/^		uint8_t base	:3;$/;"	m	struct:__anon23::__anon24
+bmr_base	src/device/ide.c	/^static uint8_t *bmr_base;	\/* bus master registers *\/$/;"	v	file:
+bmr_io_handler	src/device/ide.c	/^void bmr_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+bool	include/common.h	/^typedef uint8_t bool;$/;"	t
+buf	src/memory/dram.c	/^	uint8_t buf[NR_COL];$/;"	m	struct:__anon10	file:
+byte_cnt	src/device/ide.c	/^static uint32_t byte_cnt;$/;"	v	file:
+callback	src/device/io/mmio.c	/^	mmio_callback_t callback;$/;"	m	struct:__anon5	file:
+callback	src/device/io/port-io.c	/^	pio_callback_t callback;$/;"	m	struct:__anon6	file:
+check_parentheses	src/monitor/debug/expr.c	/^static bool check_parentheses(int p,int q)$/;"	f	file:
+check_reg_index	include/cpu/reg.h	/^static inline int check_reg_index(int index) {$/;"	f
+check_watchpoint	src/monitor/debug/watchpoint.c	/^bool check_watchpoint()$/;"	f
+cmd_c	src/monitor/debug/ui.c	/^static int cmd_c(char *args) {$/;"	f	file:
+cmd_d	src/monitor/debug/ui.c	/^static int cmd_d(char *args){$/;"	f	file:
+cmd_help	src/monitor/debug/ui.c	/^static int cmd_help(char *args) {$/;"	f	file:
+cmd_info	src/monitor/debug/ui.c	/^static int cmd_info(char *args){$/;"	f	file:
+cmd_p	src/monitor/debug/ui.c	/^static int cmd_p(char *args){$/;"	f	file:
+cmd_q	src/monitor/debug/ui.c	/^static int cmd_q(char *args) {$/;"	f	file:
+cmd_si	src/monitor/debug/ui.c	/^static int cmd_si(char *args){$/;"	f	file:
+cmd_table	src/monitor/debug/ui.c	/^} cmd_table [] = {$/;"	v	typeref:struct:__anon12	file:
+cmd_w	src/monitor/debug/ui.c	/^static int cmd_w(char *args){$/;"	f	file:
+col	src/memory/dram.c	/^		uint32_t col	: COL_WIDTH;$/;"	m	struct:__anon8::__anon9	file:
+concat	include/macro.h	8;"	d
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_i2a_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_i2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_i2rm_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_i_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_i_rm2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_r2rm_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_r_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_rm2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_rm_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_rm_1_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_rm_cl_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_rm_imm_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_si2rm_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_si_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^make_helper(concat(decode_si_rm2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^static int concat(decode_a_, SUFFIX) (swaddr_t eip, Operand *op) {$/;"	f
+concat	src/cpu/decode/decode-template.h	/^void concat(write_operand_, SUFFIX) (Operand *op, DATA_TYPE src) {$/;"	f
+concat	src/cpu/exec/arith/imul-template.h	/^make_helper(concat(imul_rm2a_, SUFFIX)) {$/;"	f
+concat	src/cpu/exec/arith/imul-template.h	/^make_helper(concat(imul_rm2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/exec/data-mov/mov-template.h	/^make_helper(concat(mov_a2moffs_, SUFFIX)) {$/;"	f
+concat	src/cpu/exec/data-mov/mov-template.h	/^make_helper(concat(mov_moffs2a_, SUFFIX)) {$/;"	f
+concat	src/cpu/exec/data-mov/xchg-template.h	/^make_helper(concat(xchg_a2r_, SUFFIX)) {$/;"	f
+concat	src/cpu/exec/logic/shrd-template.h	/^make_helper(concat(shrdi_, SUFFIX)) {$/;"	f
+concat3	include/macro.h	9;"	d
+concat3	src/cpu/decode/decode-template.h	/^static int concat3(decode_r_, SUFFIX, _internal) (swaddr_t eip, Operand *op) {$/;"	f
+concat3	src/cpu/decode/decode-template.h	/^static int concat3(decode_rm_, SUFFIX, _internal) (swaddr_t eip, Operand *rm, Operand *reg) {$/;"	f
+concat4	include/macro.h	10;"	d
+concat5	include/macro.h	11;"	d
+concat_temp	include/macro.h	7;"	d
+cpu	src/cpu/reg.c	/^CPU_state cpu;$/;"	v
+cpu_exec	src/monitor/cpu-exec.c	/^void cpu_exec(volatile uint32_t n) {$/;"	f
+ddr3_read	src/memory/dram.c	/^static void ddr3_read(hwaddr_t addr, void *data) {$/;"	f	file:
+ddr3_write	src/memory/dram.c	/^static void ddr3_write(hwaddr_t addr, void *data, uint8_t *mask) {$/;"	f	file:
+dec_r_v	src/cpu/exec/arith/dec.h	/^make_helper(dec_r_v);$/;"	v
+dec_rm_b	src/cpu/exec/arith/dec.h	/^make_helper(dec_rm_b);$/;"	v
+dec_rm_v	src/cpu/exec/arith/dec.h	/^make_helper(dec_rm_v);$/;"	v
+decode_a	src/cpu/decode/decode-template.h	8;"	d
+decode_i	src/cpu/decode/decode-template.h	7;"	d
+decode_i2a_b	include/cpu/decode/decode.h	/^make_helper(decode_i2a_b);$/;"	v
+decode_i2a_l	include/cpu/decode/decode.h	/^make_helper(decode_i2a_l);$/;"	v
+decode_i2a_w	include/cpu/decode/decode.h	/^make_helper(decode_i2a_w);$/;"	v
+decode_i2r_b	include/cpu/decode/decode.h	/^make_helper(decode_i2r_b);$/;"	v
+decode_i2r_l	include/cpu/decode/decode.h	/^make_helper(decode_i2r_l);$/;"	v
+decode_i2r_w	include/cpu/decode/decode.h	/^make_helper(decode_i2r_w);$/;"	v
+decode_i2rm_b	include/cpu/decode/decode.h	/^make_helper(decode_i2rm_b);$/;"	v
+decode_i2rm_l	include/cpu/decode/decode.h	/^make_helper(decode_i2rm_l);$/;"	v
+decode_i2rm_w	include/cpu/decode/decode.h	/^make_helper(decode_i2rm_w);$/;"	v
+decode_i_b	include/cpu/decode/decode.h	/^make_helper(decode_i_b);$/;"	v
+decode_i_l	include/cpu/decode/decode.h	/^make_helper(decode_i_l);$/;"	v
+decode_i_rm2r_l	include/cpu/decode/decode.h	/^make_helper(decode_i_rm2r_l);$/;"	v
+decode_i_rm2r_w	include/cpu/decode/decode.h	/^make_helper(decode_i_rm2r_w);$/;"	v
+decode_i_w	include/cpu/decode/decode.h	/^make_helper(decode_i_w);$/;"	v
+decode_r2rm	src/cpu/decode/decode-template.h	9;"	d
+decode_r2rm_b	include/cpu/decode/decode.h	/^make_helper(decode_r2rm_b);$/;"	v
+decode_r2rm_l	include/cpu/decode/decode.h	/^make_helper(decode_r2rm_l);$/;"	v
+decode_r2rm_w	include/cpu/decode/decode.h	/^make_helper(decode_r2rm_w);$/;"	v
+decode_r_b	include/cpu/decode/decode.h	/^make_helper(decode_r_b);$/;"	v
+decode_r_internal	src/cpu/decode/decode-template.h	5;"	d
+decode_r_l	include/cpu/decode/decode.h	/^make_helper(decode_r_l);$/;"	v
+decode_r_w	include/cpu/decode/decode.h	/^make_helper(decode_r_w);$/;"	v
+decode_rm2a_b	include/cpu/decode/decode.h	/^make_helper(decode_rm2a_b);$/;"	v
+decode_rm2a_l	include/cpu/decode/decode.h	/^make_helper(decode_rm2a_l);$/;"	v
+decode_rm2a_w	include/cpu/decode/decode.h	/^make_helper(decode_rm2a_w);$/;"	v
+decode_rm2r_b	include/cpu/decode/decode.h	/^make_helper(decode_rm2r_b);$/;"	v
+decode_rm2r_l	include/cpu/decode/decode.h	/^make_helper(decode_rm2r_l);$/;"	v
+decode_rm2r_w	include/cpu/decode/decode.h	/^make_helper(decode_rm2r_w);$/;"	v
+decode_rm_1_b	include/cpu/decode/decode.h	/^make_helper(decode_rm_1_b);$/;"	v
+decode_rm_1_l	include/cpu/decode/decode.h	/^make_helper(decode_rm_1_l);$/;"	v
+decode_rm_1_w	include/cpu/decode/decode.h	/^make_helper(decode_rm_1_w);$/;"	v
+decode_rm_b	include/cpu/decode/decode.h	/^make_helper(decode_rm_b);$/;"	v
+decode_rm_cl_b	include/cpu/decode/decode.h	/^make_helper(decode_rm_cl_b);$/;"	v
+decode_rm_cl_l	include/cpu/decode/decode.h	/^make_helper(decode_rm_cl_l);$/;"	v
+decode_rm_cl_w	include/cpu/decode/decode.h	/^make_helper(decode_rm_cl_w);$/;"	v
+decode_rm_imm_b	include/cpu/decode/decode.h	/^make_helper(decode_rm_imm_b);$/;"	v
+decode_rm_imm_l	include/cpu/decode/decode.h	/^make_helper(decode_rm_imm_l);$/;"	v
+decode_rm_imm_w	include/cpu/decode/decode.h	/^make_helper(decode_rm_imm_w);$/;"	v
+decode_rm_internal	src/cpu/decode/decode-template.h	6;"	d
+decode_rm_l	include/cpu/decode/decode.h	/^make_helper(decode_rm_l);$/;"	v
+decode_rm_w	include/cpu/decode/decode.h	/^make_helper(decode_rm_w);$/;"	v
+decode_si2rm_l	include/cpu/decode/decode.h	/^make_helper(decode_si2rm_l);$/;"	v
+decode_si2rm_w	include/cpu/decode/decode.h	/^make_helper(decode_si2rm_w);$/;"	v
+decode_si_b	include/cpu/decode/decode.h	/^make_helper(decode_si_b);$/;"	v
+decode_si_l	include/cpu/decode/decode.h	/^make_helper(decode_si_l);$/;"	v
+decode_si_rm2r_l	include/cpu/decode/decode.h	/^make_helper(decode_si_rm2r_l);$/;"	v
+decode_si_rm2r_w	include/cpu/decode/decode.h	/^make_helper(decode_si_rm2r_w);$/;"	v
+delete_wp	src/monitor/debug/watchpoint.c	/^bool delete_wp(int n)$/;"	f
+description	src/monitor/debug/ui.c	/^	char *description;$/;"	m	struct:__anon12	file:
+dest	include/cpu/decode/operand.h	/^	Operand src, dest, src2;$/;"	m	struct:__anon28
+device_update	src/device/sdl.c	/^void device_update() {$/;"	f
+device_update_flag	src/device/sdl.c	/^static int device_update_flag = false;$/;"	v	file:
+disk_fp	src/device/ide.c	/^static FILE *disk_fp;$/;"	v	file:
+disk_idx	src/device/ide.c	/^static uint32_t sector, disk_idx;$/;"	v	file:
+display_wp	src/monitor/debug/watchpoint.c	/^void display_wp()$/;"	f
+div_rm_b	src/cpu/exec/arith/div.h	/^make_helper(div_rm_b);$/;"	v
+div_rm_v	src/cpu/exec/arith/div.h	/^make_helper(div_rm_v);$/;"	v
+do_execute	include/cpu/exec/helper.h	12;"	d
+do_execute	src/cpu/exec/arith/dec-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/arith/div-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/arith/idiv-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/arith/imul-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/arith/inc-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/arith/mul-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/arith/neg-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/data-mov/mov-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/data-mov/xchg-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/and-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/not-template.h	/^static void do_execute() {$/;"	f
+do_execute	src/cpu/exec/logic/or-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/sar-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/shl-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/shr-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/shrd-template.h	/^static void do_execute () {$/;"	f
+do_execute	src/cpu/exec/logic/xor-template.h	/^static void do_execute () {$/;"	f
+do_i8259	src/device/i8259.c	/^static void do_i8259() {$/;"	f	file:
+do_int3	src/monitor/cpu-exec.c	/^void do_int3() {$/;"	f
+do_update_screen_graphic_mode	src/device/vga.c	/^void do_update_screen_graphic_mode() {$/;"	f
+dont_care	include/cpu/decode/modrm.h	/^		uint8_t dont_care	:3;$/;"	m	struct:__anon20::__anon22
+dram	src/memory/dram.c	/^uint8_t dram[NR_RANK][NR_BANK][NR_ROW][NR_COL];$/;"	v
+dram_addr	src/memory/dram.c	/^} dram_addr;$/;"	t	typeref:union:__anon8	file:
+dram_read	src/memory/dram.c	/^uint32_t dram_read(hwaddr_t addr, size_t len) {$/;"	f
+dram_write	src/memory/dram.c	/^void dram_write(hwaddr_t addr, size_t len, uint32_t data) {$/;"	f
+draw_pixel	src/device/vga.h	/^static inline void draw_pixel(int x, int y, uint8_t color_idx) {$/;"	f
+eax	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+ebp	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+ebx	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+ecx	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+edi	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+edx	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+eip	include/cpu/reg.h	/^		swaddr_t eip;$/;"	m	struct:__anon16::__anon18
+esi	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+esp	include/cpu/reg.h	/^		uint32_t eax, ecx, edx, ebx, esp, ebp, esi, edi;$/;"	m	struct:__anon16::__anon18
+eval	src/monitor/debug/expr.c	/^uint32_t eval(int p,int q)$/;"	f
+eval_reg	src/monitor/debug/expr.c	/^static uint32_t eval_reg(int p)$/;"	f	file:
+exec	src/cpu/exec/prefix/prefix.c	/^make_helper(exec);$/;"	v
+exec	src/cpu/exec/string/rep.c	/^make_helper(exec);$/;"	v
+exec_file	src/monitor/debug/elf.c	/^char *exec_file = NULL;$/;"	v
+expr	src/monitor/debug/expr.c	/^uint32_t expr(char *e, bool *success) {$/;"	f
+expression	include/monitor/watchpoint.h	/^	char expression[64];\/\/64 chars may be not enough$/;"	m	struct:watchpoint
+false	include/common.h	35;"	d
+ffo_table	src/device/i8259.c	/^static const char ffo_table[] = {$/;"	v	file:
+find_dominant_operator	src/monitor/debug/expr.c	/^static int find_dominant_operator(int p,int q)$/;"	f	file:
+free_	src/monitor/debug/watchpoint.c	/^static WP *head, *free_;$/;"	v	file:
+free_wp	src/monitor/debug/watchpoint.c	/^void free_wp(WP *wp)$/;"	f
+g	src/device/vga.h	/^		uint8_t r, g, b, a;$/;"	m	struct:__anon1::__anon2
+gpr	include/cpu/reg.h	/^	} gpr[8];$/;"	m	union:__anon16	typeref:union:__anon16::__anon17
+handler	src/monitor/debug/ui.c	/^	int (*handler) (char *);$/;"	m	struct:__anon12	file:
+head	src/monitor/debug/watchpoint.c	/^static WP *head, *free_;$/;"	v	file:
+helper_fun	src/cpu/exec/exec.c	/^typedef int (*helper_fun)(swaddr_t);$/;"	t	file:
+high	src/device/io/mmio.c	/^	hwaddr_t high;$/;"	m	struct:__anon5	file:
+high	src/device/io/port-io.c	/^	ioaddr_t high;$/;"	m	struct:__anon6	file:
+highest_irq	src/device/i8259.c	/^	int8_t highest_irq;$/;"	m	struct:__anon3	file:
+hw_mem	src/memory/dram.c	/^uint8_t *hw_mem = (void *)dram;$/;"	v
+hw_rw	include/memory/memory.h	15;"	d
+hwa_to_va	include/memory/memory.h	11;"	d
+hwaddr_read	src/memory/memory.c	/^uint32_t hwaddr_read(hwaddr_t addr, size_t len) {$/;"	f
+hwaddr_t	include/common.h	/^typedef uint32_t hwaddr_t;$/;"	t
+hwaddr_write	src/memory/memory.c	/^void hwaddr_write(hwaddr_t addr, size_t len, uint32_t data) {$/;"	f
+i8042_data_port_base	src/device/keyboard.c	/^static uint8_t *i8042_data_port_base;$/;"	v	file:
+i8042_io_handler	src/device/keyboard.c	/^void i8042_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+i8259	src/device/i8259.c	/^} i8259;$/;"	t	typeref:struct:__anon3	file:
+i8259_ack_intr	src/device/i8259.c	/^void i8259_ack_intr() {$/;"	f
+i8259_query_intr	src/device/i8259.c	/^uint8_t i8259_query_intr() {$/;"	f
+i8259_raise_intr	src/device/i8259.c	/^void i8259_raise_intr(int n) {$/;"	f
+ide_io_handler	src/device/ide.c	/^void ide_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+ide_port_base	src/device/ide.c	/^static uint8_t *ide_port_base;$/;"	v	file:
+ide_write	src/device/ide.c	/^static bool ide_write;$/;"	v	file:
+idex	include/cpu/helper.h	/^static inline int idex(swaddr_t eip, int (*decode)(swaddr_t), void (*execute) (void)) {$/;"	f
+idiv_rm_b	src/cpu/exec/arith/idiv.h	/^make_helper(idiv_rm_b);$/;"	v
+idiv_rm_v	src/cpu/exec/arith/idiv.h	/^make_helper(idiv_rm_v);$/;"	v
+imm	include/cpu/decode/operand.h	/^		uint32_t imm;$/;"	m	union:__anon26::__anon27
+imul_i_rm2r_v	src/cpu/exec/arith/imul.h	/^make_helper(imul_i_rm2r_v);$/;"	v
+imul_rm2a_b	src/cpu/exec/arith/imul.h	/^make_helper(imul_rm2a_b);$/;"	v
+imul_rm2a_v	src/cpu/exec/arith/imul.h	/^make_helper(imul_rm2a_v);$/;"	v
+imul_rm2r_v	src/cpu/exec/arith/imul.h	/^make_helper(imul_rm2r_v);$/;"	v
+imul_si_rm2r_v	src/cpu/exec/arith/imul.h	/^make_helper(imul_si_rm2r_v);$/;"	v
+inc_r_v	src/cpu/exec/arith/inc.h	/^make_helper(inc_r_v);$/;"	v
+inc_rm_b	src/cpu/exec/arith/inc.h	/^make_helper(inc_rm_b);$/;"	v
+inc_rm_v	src/cpu/exec/arith/inc.h	/^make_helper(inc_rm_v);$/;"	v
+index	include/cpu/decode/modrm.h	/^		uint8_t index	:3;$/;"	m	struct:__anon23::__anon24
+init_ddr3	src/memory/dram.c	/^void init_ddr3() {$/;"	f
+init_device	src/device/device.c	/^void init_device() {$/;"	f
+init_i8042	src/device/keyboard.c	/^void init_i8042() {$/;"	f
+init_ide	src/device/ide.c	/^void init_ide() {$/;"	f
+init_log	src/monitor/monitor.c	/^static void init_log() {$/;"	f	file:
+init_monitor	src/monitor/monitor.c	/^void init_monitor(int argc, char *argv[]) {$/;"	f
+init_ramdisk	src/monitor/monitor.c	/^static void init_ramdisk() {$/;"	f	file:
+init_regex	src/monitor/debug/expr.c	/^void init_regex() {$/;"	f
+init_sdl	src/device/sdl.c	/^void init_sdl() {$/;"	f
+init_serial	src/device/serial.c	/^void init_serial() {$/;"	f
+init_timer	src/device/timer.c	/^void init_timer() {$/;"	f
+init_vga	src/device/vga.c	/^void init_vga() {$/;"	f
+init_wp_pool	src/monitor/debug/watchpoint.c	/^void init_wp_pool() {$/;"	f
+instr	src/cpu/exec/arith/dec-template.h	3;"	d
+instr	src/cpu/exec/arith/div-template.h	3;"	d
+instr	src/cpu/exec/arith/idiv-template.h	3;"	d
+instr	src/cpu/exec/arith/imul-template.h	11;"	d
+instr	src/cpu/exec/arith/inc-template.h	3;"	d
+instr	src/cpu/exec/arith/mul-template.h	3;"	d
+instr	src/cpu/exec/arith/neg-template.h	3;"	d
+instr	src/cpu/exec/data-mov/mov-template.h	3;"	d
+instr	src/cpu/exec/data-mov/xchg-template.h	3;"	d
+instr	src/cpu/exec/logic/and-template.h	3;"	d
+instr	src/cpu/exec/logic/not-template.h	3;"	d
+instr	src/cpu/exec/logic/or-template.h	3;"	d
+instr	src/cpu/exec/logic/sar-template.h	3;"	d
+instr	src/cpu/exec/logic/shl-template.h	3;"	d
+instr	src/cpu/exec/logic/shr-template.h	3;"	d
+instr	src/cpu/exec/logic/shrd-template.h	3;"	d
+instr	src/cpu/exec/logic/xor-template.h	3;"	d
+instr_fetch	include/cpu/helper.h	/^static inline uint32_t instr_fetch(swaddr_t addr, size_t len) {$/;"	f
+int3	src/cpu/exec/misc/misc.h	/^make_helper(int3);$/;"	v
+intr_NO	src/device/i8259.c	/^static uint8_t intr_NO;$/;"	v	file:
+inv	src/cpu/exec/special/special.h	/^make_helper(inv);$/;"	v
+ioaddr_t	include/common.h	/^typedef uint16_t ioaddr_t;$/;"	t
+is_mmio	src/device/io/mmio.c	/^int is_mmio(hwaddr_t addr) {$/;"	f
+is_operand_size_16	include/cpu/decode/operand.h	/^	bool is_operand_size_16;$/;"	m	struct:__anon28
+it	src/device/sdl.c	/^static struct itimerval it;$/;"	v	typeref:struct:itimerval	file:
+jbuf	src/monitor/cpu-exec.c	/^jmp_buf jbuf;$/;"	v
+jiffy	src/device/sdl.c	/^static uint64_t jiffy = 0;$/;"	v	file:
+keyboard_intr	src/device/keyboard.c	/^void keyboard_intr(uint8_t scancode) {$/;"	f
+lea	src/cpu/exec/misc/misc.h	/^make_helper(lea);$/;"	v
+line_dirty	src/device/vga.c	/^bool line_dirty[CTR_ROW];$/;"	v
+lnaddr_read	src/memory/memory.c	/^uint32_t lnaddr_read(lnaddr_t addr, size_t len) {$/;"	f
+lnaddr_t	include/common.h	/^typedef uint32_t lnaddr_t;$/;"	t
+lnaddr_write	src/memory/memory.c	/^void lnaddr_write(lnaddr_t addr, size_t len, uint32_t data) {$/;"	f
+load_addr	src/cpu/decode/modrm.c	/^int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {$/;"	f
+load_elf_tables	src/monitor/debug/elf.c	/^void load_elf_tables(int argc, char *argv[]) {$/;"	f
+load_entry	src/monitor/monitor.c	/^static void load_entry() {$/;"	f	file:
+log_fp	src/monitor/monitor.c	/^FILE *log_fp = NULL;$/;"	v
+logo	src/lib/logo.c	/^unsigned char logo[] = {$/;"	v
+low	src/device/io/mmio.c	/^	hwaddr_t low;$/;"	m	struct:__anon5	file:
+low	src/device/io/port-io.c	/^	ioaddr_t low;$/;"	m	struct:__anon6	file:
+main	src/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+make_group	src/cpu/exec/exec.c	9;"	d	file:
+make_helper	include/cpu/helper.h	8;"	d
+make_helper	src/cpu/exec/exec.c	/^make_helper(exec) {$/;"	f
+make_helper	src/cpu/exec/exec.c	/^static make_helper(_2byte_esc) {$/;"	f	file:
+make_helper	src/cpu/exec/misc/misc.c	/^make_helper(int3) {$/;"	f
+make_helper	src/cpu/exec/misc/misc.c	/^make_helper(lea) {$/;"	f
+make_helper	src/cpu/exec/misc/misc.c	/^make_helper(nop) {$/;"	f
+make_helper	src/cpu/exec/prefix/prefix.c	/^make_helper(operand_size) {$/;"	f
+make_helper	src/cpu/exec/special/special.c	/^make_helper(inv) {$/;"	f
+make_helper	src/cpu/exec/special/special.c	/^make_helper(nemu_trap) {$/;"	f
+make_helper	src/cpu/exec/string/rep.c	/^make_helper(rep) {$/;"	f
+make_helper_v	include/cpu/exec/helper.h	7;"	d
+make_instr_helper	include/cpu/exec/helper.h	14;"	d
+make_token	src/monitor/debug/expr.c	/^static bool make_token(char *e) {$/;"	f	file:
+maps	src/device/io/mmio.c	/^static MMIO_t maps[NR_MAP];$/;"	v	file:
+maps	src/device/io/port-io.c	/^static PIO_t maps[NR_MAP];$/;"	v	file:
+master	src/device/i8259.c	/^static i8259 master, slave;$/;"	v	file:
+memcpy_with_mask	include/misc.h	/^inline static void memcpy_with_mask(void *dest, const void *src, size_t len, uint8_t *mask) {$/;"	f
+mmio_callback_t	include/device/mmio.h	/^typedef void(*mmio_callback_t)(hwaddr_t, size_t, bool);$/;"	t
+mmio_read	src/device/io/mmio.c	/^uint32_t mmio_read(hwaddr_t addr, size_t len, int map_NO) {$/;"	f
+mmio_space	src/device/io/mmio.c	/^	uint8_t *mmio_space;$/;"	m	struct:__anon5	file:
+mmio_space_free_index	src/device/io/mmio.c	/^static uint32_t mmio_space_free_index = 0;$/;"	v	file:
+mmio_space_pool	src/device/io/mmio.c	/^static uint8_t mmio_space_pool[MMIO_SPACE_MAX];$/;"	v	file:
+mmio_write	src/device/io/mmio.c	/^void mmio_write(hwaddr_t addr, size_t len, uint32_t data, int map_NO) {$/;"	f
+mod	include/cpu/decode/modrm.h	/^		uint8_t mod		:2;$/;"	m	struct:__anon20::__anon21
+mov_a2moffs_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_a2moffs_b);$/;"	v
+mov_a2moffs_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_a2moffs_v);$/;"	v
+mov_i2r_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_i2r_b);$/;"	v
+mov_i2r_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_i2r_v);$/;"	v
+mov_i2rm_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_i2rm_b);$/;"	v
+mov_i2rm_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_i2rm_v);$/;"	v
+mov_moffs2a_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_moffs2a_b);$/;"	v
+mov_moffs2a_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_moffs2a_v);$/;"	v
+mov_r2rm_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_r2rm_b);$/;"	v
+mov_r2rm_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_r2rm_v);$/;"	v
+mov_rm2r_b	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_rm2r_b);$/;"	v
+mov_rm2r_v	src/cpu/exec/data-mov/mov.h	/^make_helper(mov_rm2r_v);$/;"	v
+mul_rm_b	src/cpu/exec/arith/mul.h	/^make_helper(mul_rm_b);$/;"	v
+mul_rm_v	src/cpu/exec/arith/mul.h	/^make_helper(mul_rm_v);$/;"	v
+name	src/monitor/debug/ui.c	/^	char *name;$/;"	m	struct:__anon12	file:
+neg_rm_b	src/cpu/exec/arith/neg.h	/^make_helper(neg_rm_b);$/;"	v
+neg_rm_v	src/cpu/exec/arith/neg.h	/^make_helper(neg_rm_v);$/;"	v
+nemu_state	src/monitor/cpu-exec.c	/^int nemu_state = STOP;$/;"	v
+nemu_trap	src/cpu/exec/special/special.h	/^make_helper(nemu_trap);$/;"	v
+new_value	include/monitor/watchpoint.h	/^	uint32_t new_value;\/\/need store to check valuse change$/;"	m	struct:watchpoint
+new_wp	src/monitor/debug/watchpoint.c	/^WP* new_wp()$/;"	f
+newkey	src/device/keyboard.c	/^static bool newkey;$/;"	v	file:
+next	include/monitor/watchpoint.h	/^	struct watchpoint *next;$/;"	m	struct:watchpoint	typeref:struct:watchpoint::watchpoint
+nop	src/cpu/exec/misc/misc.h	/^make_helper(nop);$/;"	v
+not_rm_b	src/cpu/exec/logic/not.h	/^make_helper(not_rm_b);$/;"	v
+not_rm_v	src/cpu/exec/logic/not.h	/^make_helper(not_rm_v);$/;"	v
+nr_map	src/device/io/mmio.c	/^static int nr_map = 0;$/;"	v	file:
+nr_map	src/device/io/port-io.c	/^static int nr_map = 0;$/;"	v	file:
+nr_symtab_entry	src/monitor/debug/elf.c	/^static int nr_symtab_entry;$/;"	v	file:
+nr_token	src/monitor/debug/expr.c	/^int nr_token;$/;"	v
+old_value	include/monitor/watchpoint.h	/^	uint32_t old_value;\/\/need store to check valuse change$/;"	m	struct:watchpoint
+op_dest	include/cpu/helper.h	27;"	d
+op_src	include/cpu/helper.h	25;"	d
+op_src2	include/cpu/helper.h	26;"	d
+opcode	include/cpu/decode/modrm.h	/^		uint8_t opcode		:3;$/;"	m	struct:__anon20::__anon22
+opcode	include/cpu/decode/operand.h	/^	uint32_t opcode;$/;"	m	struct:__anon28
+operand_size	src/cpu/exec/prefix/prefix.h	/^make_helper(operand_size);$/;"	v
+ops_decoded	src/cpu/decode/decode.c	/^Operands ops_decoded;$/;"	v
+or_i2a_b	src/cpu/exec/logic/or.h	/^make_helper(or_i2a_b);$/;"	v
+or_i2a_v	src/cpu/exec/logic/or.h	/^make_helper(or_i2a_v);$/;"	v
+or_i2rm_b	src/cpu/exec/logic/or.h	/^make_helper(or_i2rm_b);$/;"	v
+or_i2rm_v	src/cpu/exec/logic/or.h	/^make_helper(or_i2rm_v);$/;"	v
+or_r2rm_b	src/cpu/exec/logic/or.h	/^make_helper(or_r2rm_b);$/;"	v
+or_r2rm_v	src/cpu/exec/logic/or.h	/^make_helper(or_r2rm_v);$/;"	v
+or_rm2r_b	src/cpu/exec/logic/or.h	/^make_helper(or_rm2r_b);$/;"	v
+or_rm2r_v	src/cpu/exec/logic/or.h	/^make_helper(or_rm2r_v);$/;"	v
+or_si2rm_v	src/cpu/exec/logic/or.h	/^make_helper(or_si2rm_v);$/;"	v
+palette	src/device/vga-palette.c	/^Color palette [] = {$/;"	v
+panic	include/debug.h	35;"	d
+pio_callback	src/device/io/port-io.c	/^static void pio_callback(ioaddr_t addr, size_t len, bool is_write) {$/;"	f	file:
+pio_callback_t	include/device/port-io.h	/^typedef void(*pio_callback_t)(ioaddr_t, size_t, bool);$/;"	t
+pio_read	src/device/io/port-io.c	/^uint32_t pio_read(ioaddr_t addr, size_t len) {$/;"	f
+pio_space	src/device/io/port-io.c	/^static uint8_t pio_space[PORT_IO_SPACE_MAX + 3];$/;"	v	file:
+pio_write	src/device/io/port-io.c	/^void pio_write(ioaddr_t addr, size_t len, uint32_t data) {$/;"	f
+pixel_buf	src/device/sdl.c	/^uint8_t (*pixel_buf) [SCREEN_COL];$/;"	v
+print_asm	include/cpu/exec/helper.h	21;"	d
+print_asm	include/cpu/exec/helper.h	23;"	d
+print_asm_template1	include/cpu/exec/helper.h	26;"	d
+print_asm_template2	include/cpu/exec/helper.h	29;"	d
+print_asm_template3	include/cpu/exec/helper.h	32;"	d
+print_bin_instr	src/monitor/cpu-exec.c	/^void print_bin_instr(swaddr_t eip, int len) {$/;"	f
+r	src/device/vga.h	/^		uint8_t r, g, b, a;$/;"	m	struct:__anon1::__anon2
+r2rm	src/cpu/exec/data-mov/xchg-template.h	/^make_instr_helper(r2rm);$/;"	v
+rank	src/memory/dram.c	/^		uint32_t rank	: RANK_WIDTH;$/;"	m	struct:__anon8::__anon9	file:
+re	src/monitor/debug/expr.c	/^static regex_t re[NR_REGEX];$/;"	v	file:
+read_ModR_M	src/cpu/decode/modrm.c	/^int read_ModR_M(swaddr_t eip, Operand *rm, Operand *reg) {$/;"	f
+real_screen	src/device/sdl.c	/^SDL_Surface *real_screen;$/;"	v
+reg	include/cpu/decode/modrm.h	/^		uint8_t reg		:3;$/;"	m	struct:__anon20::__anon21
+reg	include/cpu/decode/operand.h	/^		uint32_t reg;$/;"	m	union:__anon26::__anon27
+reg_b	include/cpu/reg.h	54;"	d
+reg_l	include/cpu/reg.h	52;"	d
+reg_test	src/cpu/reg.c	/^void reg_test() {$/;"	f
+reg_w	include/cpu/reg.h	53;"	d
+regex	src/monitor/debug/expr.c	/^	char *regex;$/;"	m	struct:rule	file:
+regsb	src/cpu/reg.c	/^const char *regsb[] = {"al", "cl", "dl", "bl", "ah", "ch", "dh", "bh"};$/;"	v
+regsl	src/cpu/reg.c	/^const char *regsl[] = {"eax", "ecx", "edx", "ebx", "esp", "ebp", "esi", "edi"};$/;"	v
+regsw	src/cpu/reg.c	/^const char *regsw[] = {"ax", "cx", "dx", "bx", "sp", "bp", "si", "di"};$/;"	v
+rep	src/cpu/exec/string/rep.h	/^make_helper(rep);$/;"	v
+restart	src/monitor/monitor.c	/^void restart() {$/;"	f
+rl_gets	src/monitor/debug/ui.c	/^char* rl_gets() {$/;"	f
+row	src/memory/dram.c	/^		uint32_t row	: ROW_WIDTH;$/;"	m	struct:__anon8::__anon9	file:
+row_idx	src/memory/dram.c	/^	int32_t row_idx;$/;"	m	struct:__anon10	file:
+rowbufs	src/memory/dram.c	/^RB rowbufs[NR_RANK][NR_BANK];$/;"	v
+rule	src/monitor/debug/expr.c	/^static struct rule {$/;"	s	file:
+rules	src/monitor/debug/expr.c	/^} rules[] = {$/;"	v	typeref:struct:rule	file:
+sar_rm_1_b	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_1_b);$/;"	v
+sar_rm_1_v	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_1_v);$/;"	v
+sar_rm_cl_b	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_cl_b);$/;"	v
+sar_rm_cl_v	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_cl_v);$/;"	v
+sar_rm_imm_b	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_imm_b);$/;"	v
+sar_rm_imm_v	src/cpu/exec/logic/sar.h	/^make_helper(sar_rm_imm_v);$/;"	v
+screen	src/device/sdl.c	/^SDL_Surface *screen;$/;"	v
+sdl_clear_event_queue	src/device/sdl.c	/^void sdl_clear_event_queue() {$/;"	f
+sector	src/device/ide.c	/^static uint32_t sector, disk_idx;$/;"	v	file:
+serial_io_handler	src/device/serial.c	/^void serial_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+serial_port_base	src/device/serial.c	/^static uint8_t *serial_port_base;$/;"	v	file:
+shl_rm_1_b	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_1_b);$/;"	v
+shl_rm_1_v	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_1_v);$/;"	v
+shl_rm_cl_b	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_cl_b);$/;"	v
+shl_rm_cl_v	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_cl_v);$/;"	v
+shl_rm_imm_b	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_imm_b);$/;"	v
+shl_rm_imm_v	src/cpu/exec/logic/shl.h	/^make_helper(shl_rm_imm_v);$/;"	v
+shr_rm_1_b	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_1_b);$/;"	v
+shr_rm_1_v	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_1_v);$/;"	v
+shr_rm_cl_b	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_cl_b);$/;"	v
+shr_rm_cl_v	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_cl_v);$/;"	v
+shr_rm_imm_b	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_imm_b);$/;"	v
+shr_rm_imm_v	src/cpu/exec/logic/shr.h	/^make_helper(shr_rm_imm_v);$/;"	v
+shrdi_v	src/cpu/exec/logic/shrd.h	/^make_helper(shrdi_v);$/;"	v
+simm	include/cpu/decode/operand.h	/^		int32_t simm;$/;"	m	union:__anon26::__anon27
+size	include/cpu/decode/operand.h	/^	size_t size;$/;"	m	struct:__anon26
+slave	src/device/i8259.c	/^static i8259 master, slave;$/;"	v	file:
+src	include/cpu/decode/operand.h	/^	Operand src, dest, src2;$/;"	m	struct:__anon28
+src2	include/cpu/decode/operand.h	/^	Operand src, dest, src2;$/;"	m	struct:__anon28
+ss	include/cpu/decode/modrm.h	/^		uint8_t ss		:2;$/;"	m	struct:__anon23::__anon24
+str	include/cpu/decode/operand.h	/^	char str[OP_STR_SIZE];$/;"	m	struct:__anon26
+str	include/macro.h	5;"	d
+str	src/monitor/debug/expr.c	/^	char str[32];$/;"	m	struct:token	file:
+str_temp	include/macro.h	4;"	d
+strtab	src/monitor/debug/elf.c	/^static char *strtab = NULL;$/;"	v	file:
+swaddr_read	src/memory/memory.c	/^uint32_t swaddr_read(swaddr_t addr, size_t len) {$/;"	f
+swaddr_t	include/common.h	/^typedef uint32_t swaddr_t;$/;"	t
+swaddr_write	src/memory/memory.c	/^void swaddr_write(swaddr_t addr, size_t len, uint32_t data) {$/;"	f
+sym2scancode	src/device/sdl.h	/^const static uint8_t sym2scancode[2][128] = { {$/;"	v
+symtab	src/monitor/debug/elf.c	/^static Elf32_Sym *symtab = NULL;$/;"	v	file:
+timer_intr	src/device/timer.c	/^void timer_intr() {$/;"	f
+timer_sig_handler	src/device/sdl.c	/^static void timer_sig_handler(int signum) {$/;"	f	file:
+token	src/monitor/debug/expr.c	/^typedef struct token {$/;"	s	file:
+token_type	src/monitor/debug/expr.c	/^	int token_type;$/;"	m	struct:rule	file:
+tokens	src/monitor/debug/expr.c	/^Token tokens[32];$/;"	v
+true	include/common.h	36;"	d
+type	include/cpu/decode/operand.h	/^	uint32_t type;$/;"	m	struct:__anon26
+type	src/monitor/debug/expr.c	/^	int type;$/;"	m	struct:token	file:
+ui_mainloop	src/monitor/debug/ui.c	/^void ui_mainloop() {$/;"	f
+uint32_t	include/cpu/reg.h	/^			uint32_t  :1;$/;"	m	struct:__anon16::__anon18::__anon19
+uint32_t	include/cpu/reg.h	/^			uint32_t  :3;$/;"	m	struct:__anon16::__anon18::__anon19
+uint32_t	include/cpu/reg.h	/^			uint32_t :1;$/;"	m	struct:__anon16::__anon18::__anon19
+unalign	include/common.h	/^} unalign;$/;"	t	typeref:union:__anon30
+unalign_rw	include/macro.h	13;"	d
+update_screen	src/device/vga.c	/^void update_screen() {$/;"	f
+update_screen_flag	src/device/sdl.c	/^static int update_screen_flag = false;$/;"	v	file:
+va_to_hwa	include/memory/memory.h	13;"	d
+val	include/cpu/decode/modrm.h	/^	uint8_t val;$/;"	m	union:__anon20
+val	include/cpu/decode/modrm.h	/^	uint8_t val;$/;"	m	union:__anon23
+val	include/cpu/decode/operand.h	/^	uint32_t val;$/;"	m	struct:__anon26
+val	src/device/vga.h	/^	uint32_t val;$/;"	m	union:__anon1
+valid	src/memory/dram.c	/^	bool valid;$/;"	m	struct:__anon10	file:
+vga_crtc_io_handler	src/device/vga.c	/^void vga_crtc_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+vga_crtc_port_base	src/device/vga.c	/^static uint8_t *vga_crtc_port_base;$/;"	v	file:
+vga_crtc_regs	src/device/vga.c	/^static uint8_t vga_crtc_regs[19];$/;"	v	file:
+vga_dac_io_handler	src/device/vga.c	/^void vga_dac_io_handler(ioaddr_t addr, size_t len, bool is_write) {$/;"	f
+vga_dac_port_base	src/device/vga.c	/^static uint8_t *vga_dac_port_base;$/;"	v	file:
+vga_vmem_io_handler	src/device/vga.c	/^void vga_vmem_io_handler(hwaddr_t addr, size_t len, bool is_write) {$/;"	f
+vmem_base	src/device/vga.c	/^static void *vmem_base;$/;"	v	file:
+vmem_dirty	src/device/vga.c	/^bool vmem_dirty = false;$/;"	v
+watchpoint	include/monitor/watchpoint.h	/^typedef struct watchpoint {$/;"	s
+welcome	src/monitor/monitor.c	/^static void welcome() {$/;"	f	file:
+wp_pool	src/monitor/debug/watchpoint.c	/^static WP wp_pool[NR_WP];$/;"	v	file:
+xchg_a2r_v	src/cpu/exec/data-mov/xchg.h	/^make_helper(xchg_a2r_v);$/;"	v
+xchg_r2rm_b	src/cpu/exec/data-mov/xchg.h	/^make_helper(xchg_r2rm_b);$/;"	v
+xchg_r2rm_v	src/cpu/exec/data-mov/xchg.h	/^make_helper(xchg_r2rm_v);$/;"	v
+xor_i2a_b	src/cpu/exec/logic/xor.h	/^make_helper(xor_i2a_b);$/;"	v
+xor_i2a_v	src/cpu/exec/logic/xor.h	/^make_helper(xor_i2a_v);$/;"	v
+xor_i2rm_b	src/cpu/exec/logic/xor.h	/^make_helper(xor_i2rm_b);$/;"	v
+xor_i2rm_v	src/cpu/exec/logic/xor.h	/^make_helper(xor_i2rm_v);$/;"	v
+xor_r2rm_b	src/cpu/exec/logic/xor.h	/^make_helper(xor_r2rm_b);$/;"	v
+xor_r2rm_v	src/cpu/exec/logic/xor.h	/^make_helper(xor_r2rm_v);$/;"	v
+xor_rm2r_b	src/cpu/exec/logic/xor.h	/^make_helper(xor_rm2r_b);$/;"	v
+xor_rm2r_v	src/cpu/exec/logic/xor.h	/^make_helper(xor_rm2r_v);$/;"	v
+xor_si2rm_v	src/cpu/exec/logic/xor.h	/^make_helper(xor_si2rm_v);$/;"	v
