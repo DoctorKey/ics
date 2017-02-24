@@ -9,6 +9,8 @@
 #include "data-mov/pop.h"
 #include "data-mov/leave.h"
 #include "data-mov/cdq.h"
+#include "data-mov/lgdt.h"
+#include "data-mov/movc.h"
 
 #include "arith/dec.h"
 #include "arith/inc.h"

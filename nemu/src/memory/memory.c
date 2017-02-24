@@ -3,6 +3,7 @@
 
 uint32_t dram_read(hwaddr_t, size_t);
 void dram_write(hwaddr_t, size_t, uint32_t);
+lnaddr_t seg_translate(swaddr_t, size_t, uint8_t);
 Cache cache_1;
 Cache_2 cache_2;
 

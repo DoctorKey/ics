@@ -86,6 +86,12 @@ void restart() {
 	/* Read the entry code into memory. */
 	load_entry();
 
+	/* init CR0 real mode*/
+	cpu.cr0.val = 0;
+
+	/* init reg according i386 */
+//	cpu.EFLAGS = 2;
+
 	/* Set the initial instruction pointer. */
 	cpu.eip = ENTRY_START;
 

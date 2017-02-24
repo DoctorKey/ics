@@ -40,7 +40,6 @@ make_helper(concat(decode_si_, SUFFIX)) {
 	if(i_8 >> 7 == 1){
 		i_8 = ~i_8 + 1;
 		op_src->simm = - i_8;
-//		printf("--8 si is %d\n",op_src->simm);
 	}
 #endif
 #if DATA_BYTE == 2
@@ -48,7 +47,6 @@ make_helper(concat(decode_si_, SUFFIX)) {
 	if(i_16 >> 15 == 1){
 		i_16 = ~i_16 + 1;
 		op_src->simm = - i_16;
-//		printf("-16 si is %d\n",op_src->simm);
 	}
 #endif
 #if DATA_BYTE == 4
@@ -56,12 +54,10 @@ make_helper(concat(decode_si_, SUFFIX)) {
 	if(i_32 >> 31 == 1){
 		i_32 = ~i_32 + 1;
 		op_src->simm = - i_32;
-//		printf("-32 si is %d\n",op_src->simm);
 	}
 #endif
 
 	op_src->val = op_src->simm;
-//	printf("op_src->val is %d\n",op_src->val);
 
 #ifdef DEBUG
 	snprintf(op_src->str, OP_STR_SIZE, "$0x%x", op_src->val);

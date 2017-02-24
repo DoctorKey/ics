@@ -1,6 +1,16 @@
 #ifndef __X86_INC_CPU_H__
 #define __X86_INC_CPU_H__
 
+/* the seg register */
+typedef union SEG {
+	struct {
+		uint16_t RPL:2;
+		uint16_t TI:1;	//choose GDT or LDT
+		uint16_t INDEX:13;
+	};
+	uint16_t val;
+}SEG;
+
 /* the Control Register 0 */
 typedef union CR0 {
 	struct {
