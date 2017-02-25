@@ -4,7 +4,7 @@
 int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {
 	assert(m->mod != 3);
 
-	int32_t disp;
+	int32_t disp = 0;
 	int instr_len, disp_offset, disp_size = 4;
 	int base_reg = -1, index_reg = -1, scale = 0;
 	swaddr_t addr = 0;
@@ -29,6 +29,12 @@ int load_addr(swaddr_t eip, ModR_M *m, Operand *rm) {
 		else { disp_size = 0; }
 	}
 	else if(m->mod == 1) { disp_size = 1; }
+
+	if(base_reg == R_ESP || base_reg == R_EBP){
+		rm->sreg = R_SS;
+	}else{
+		rm->sreg = R_DS;
+	}
 
 	instr_len = disp_offset;
 	if(disp_size != 0) {
@@ -92,6 +98,11 @@ int read_ModR_M(swaddr_t eip, Operand *rm, Operand *reg) {
 	if(m.mod == 3) {
 		rm->type = OP_TYPE_REG;
 		rm->reg = m.R_M;
+		if(rm->reg == R_ESP || rm->reg == R_EBP){
+			rm->sreg = R_SS;
+		}else{
+			rm->sreg = R_DS;
+		}
 		switch(rm->size) {
 			case 1: rm->val = reg_b(m.R_M); break;
 			case 2: rm->val = reg_w(m.R_M); break;
@@ -109,7 +120,7 @@ int read_ModR_M(swaddr_t eip, Operand *rm, Operand *reg) {
 	}
 	else {
 		int instr_len = load_addr(eip, &m, rm);
-		rm->val = swaddr_read(rm->addr, rm->size);
+		rm->val = swaddr_read(rm->addr, rm->size, rm->sreg);
 		return instr_len;
 	}
 }

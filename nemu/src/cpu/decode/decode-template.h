@@ -21,7 +21,6 @@ make_helper(concat(decode_i_, SUFFIX)) {
 	return DATA_BYTE;
 }
 
-//#if DATA_BYTE == 1 || DATA_BYTE == 4
 /* sign immediate */
 make_helper(concat(decode_si_, SUFFIX)) {
 	op_src->type = OP_TYPE_IMM;
@@ -34,7 +33,6 @@ make_helper(concat(decode_si_, SUFFIX)) {
 	 */
 //	panic("please implement me");
 	op_src->simm = instr_fetch(eip,DATA_BYTE);
-
 #if DATA_BYTE == 1
 	uint8_t i_8 = op_src->simm;
 	if(i_8 >> 7 == 1){
@@ -43,7 +41,7 @@ make_helper(concat(decode_si_, SUFFIX)) {
 	}
 #endif
 #if DATA_BYTE == 2
-	uint8_t i_16 = op_src->simm;
+	uint16_t i_16 = op_src->simm;
 	if(i_16 >> 15 == 1){
 		i_16 = ~i_16 + 1;
 		op_src->simm = - i_16;
@@ -56,7 +54,6 @@ make_helper(concat(decode_si_, SUFFIX)) {
 		op_src->simm = - i_32;
 	}
 #endif
-
 	op_src->val = op_src->simm;
 
 #ifdef DEBUG
@@ -64,7 +61,6 @@ make_helper(concat(decode_si_, SUFFIX)) {
 #endif
 	return DATA_BYTE;
 }
-//#endif
 
 /* eAX */
 static int concat(decode_a_, SUFFIX) (swaddr_t eip, Operand *op) {
@@ -204,7 +200,7 @@ make_helper(concat(decode_rm_imm_, SUFFIX)) {
 
 void concat(write_operand_, SUFFIX) (Operand *op, DATA_TYPE src) {
 	if(op->type == OP_TYPE_REG) { REG(op->reg) = src; }
-	else if(op->type == OP_TYPE_MEM) { swaddr_write(op->addr, op->size, R_SS, src); }
+	else if(op->type == OP_TYPE_MEM) { swaddr_write(op->addr, op->size, op->sreg, src); }
 	else { assert(0); }
 }
 

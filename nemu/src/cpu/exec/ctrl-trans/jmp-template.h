@@ -18,5 +18,13 @@ static void do_execute () {
 
 make_instr_helper(si)
 make_instr_helper(rm)
+#if DATA_BYTE == 4
+make_helper(ljmp) {
+	cpu.cs.val = instr_fetch(eip + 1, 2);
+	cpu.eip = instr_fetch(eip + 3, 4);
 
+	print_asm("ljmp 0x%x:0x%x", cpu.cs.val, cpu.eip);
+	return 0;
+}
+#endif
 #include "cpu/exec/template-end.h"
