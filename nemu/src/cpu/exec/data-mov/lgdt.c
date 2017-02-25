@@ -5,20 +5,18 @@
 #include "cpu/exec/template-start.h"
 make_helper(lgdt)
 {
-	uint16_t m16 = instr_fetch(eip + 1, 2);
+	uint32_t lnaddr = instr_fetch(eip + 2, 4);
+	/* important!! instr is lnaddr not base and limit */
+	/* use lnaddr_read to get base and limit */
+	cpu.GDTR.limit = lnaddr_read(lnaddr, 2);
 	if(ops_decoded.is_operand_size_16 == true){
-		cpu.GDTR_LIM = m16;
-		uint32_t m24 = instr_fetch(eip + 3, 3);
-		cpu.GDTR = m24;
-		print_asm("lgdt_w 0x%x:0x%x",m16,m24);
-		return 6;
+		cpu.GDTR.base = lnaddr_read(lnaddr + 2, 4) & 0xffffff;
 	}else{
-		cpu.GDTR_LIM = m16;
-		uint32_t m32 = instr_fetch(eip + 3, 4);
-		cpu.GDTR = m32;
-		print_asm("lgdt_l 0x%x:0x%x",m16,m32);
-		return 6;
+		cpu.GDTR.base = lnaddr_read(lnaddr + 2, 4);
 	}
+
+	print_asm("lgdt_l 0x%x:0x%x", cpu.GDTR.limit, cpu.GDTR.base);
+	return 6;
 
 }
 #include "cpu/exec/template-end.h"

@@ -48,8 +48,10 @@ typedef struct {
 			SEG es, cs, ss, ds;
 		};
 	};
-	uint32_t GDTR;
-	uint16_t GDTR_LIM;
+	struct {
+		uint32_t base;
+		uint16_t limit;
+	}GDTR;
 	CR0 cr0;
 
 } CPU_state;

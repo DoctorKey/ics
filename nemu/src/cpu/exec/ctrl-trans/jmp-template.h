@@ -20,8 +20,9 @@ make_instr_helper(si)
 make_instr_helper(rm)
 #if DATA_BYTE == 4
 make_helper(ljmp) {
-	cpu.cs.val = instr_fetch(eip + 1, 2);
-	cpu.eip = instr_fetch(eip + 3, 4);
+	/* important!! the order of eip and cs */
+	cpu.eip = instr_fetch(eip + 1, 4);
+	cpu.cs.val = instr_fetch(eip + 5, 2);
 
 	print_asm("ljmp 0x%x:0x%x", cpu.cs.val, cpu.eip);
 	return 0;

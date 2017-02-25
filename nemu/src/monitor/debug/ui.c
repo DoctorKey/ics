@@ -70,12 +70,13 @@ static int cmd_info(char *args){
 		printf("edx\t0x%08x\t%010d\t|ss\t0x%08x\t0x%08x\n",cpu.edx,cpu.edx,cpu.ss.val,cpu.ss.INDEX);
 		printf("ebx\t0x%08x\t%010d\t|ds\t0x%08x\t0x%08x\n",cpu.ebx,cpu.ebx,cpu.ds.val,cpu.ds.INDEX);
 		printf("esp\t0x%08x\t%010d\t|GDTR\tGDTR_LIM\n",cpu.esp,cpu.esp);
-		printf("ebp\t0x%08x\t%010d\t|0x%08x\t0x%04x\n",cpu.ebp,cpu.ebp,cpu.GDTR,cpu.GDTR_LIM);
+		printf("ebp\t0x%08x\t%010d\t|0x%08x\t0x%04x\n",cpu.ebp,cpu.ebp,cpu.GDTR.base,cpu.GDTR.limit);
 		printf("esi\t0x%08x\t%010d\n",cpu.esi,cpu.esi);
 		printf("edi\t0x%08x\t%010d\n",cpu.edi,cpu.edi);
 		printf("CF=%d\tPF=%d\tZF=%d\tSF=%d\tIF=%d\tDF=%d\tOF=%d\t\n",
 			cpu.EFLAGS.CF,cpu.EFLAGS.PF,cpu.EFLAGS.ZF,cpu.EFLAGS.SF,cpu.EFLAGS.IF,cpu.EFLAGS.DF,cpu.EFLAGS.OF);
 		printf("eip\t0x%08x\t%d\n",cpu.eip,cpu.eip);
+		printf("CR0\t0x%08x\t%d\n",cpu.cr0.val,cpu.cr0.val);
 		printf("-----------------------------------\n");
 		return 0;
 	}

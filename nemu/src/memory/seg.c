@@ -1,10 +1,9 @@
 #include "common.h"
-#include "burst.h"
-#include "misc.h"
 #include "cpu/reg.h"
 #include "../../../lib-common/x86-inc/mmu.h"
+#include "memory/seg.h"
 
-uint32_t lnaddr_read(lnaddr_t, size_t); 
+uint32_t lnaddr_read(lnaddr_t addr, size_t len); 
 lnaddr_t seg_translate(swaddr_t addr, size_t len, uint8_t sreg)
 {
 	/* run in real mode */
@@ -21,12 +20,12 @@ lnaddr_t seg_translate(swaddr_t addr, size_t len, uint8_t sreg)
 	/* get seg_choose_index */
 	uint16_t seg_choose_index = cpu.seg[sreg].INDEX;
 	seg_choose_index <<= 3;
-	if(seg_choose_index > cpu.GDTR_LIM){
+	if(seg_choose_index > cpu.GDTR.limit){
 		printf("seg_choose_index exceed GDTR_LIM!\n");
 		assert(0);
 	}
 	/* get segdesc */
-	uint32_t segdesc_lnaddr = cpu.GDTR + seg_choose_index;
+	uint32_t segdesc_lnaddr = cpu.GDTR.base + seg_choose_index;
 	uint32_t temp[2];
 	temp[0] = lnaddr_read(segdesc_lnaddr,4);
 	temp[1] = lnaddr_read(segdesc_lnaddr + 4,4);
