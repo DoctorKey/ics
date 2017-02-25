@@ -10,14 +10,24 @@ Cache_2 cache_2;
 /* Memory accessing interfaces */
 
 uint32_t hwaddr_read(hwaddr_t addr, size_t len) {
+	/* disk */
 //	return dram_read(addr, len) & (~0u >> ((4 - len) << 3));
+
+	/* cache_1 --> cache_2 --> disk */
 	return cache_1.read(&cache_1,addr, len) & (~0u >> ((4 - len) << 3));
+
+	/* cache_2 --> disk */
 //	return cache_2.read(&cache_2,addr, len) & (~0u >> ((4 - len) << 3));
 }
 
 void hwaddr_write(hwaddr_t addr, size_t len, uint32_t data) {
+	/* disk */
 //	dram_write(addr, len, data);
+
+	/* cache_1 --> cache_2 --> disk */
 	cache_1.write(&cache_1, addr, len, data);
+
+	/* cache_2 --> disk */
 //	cache_2.write(&cache_2, addr, len, data);
 }
 
@@ -29,17 +39,19 @@ void lnaddr_write(lnaddr_t addr, size_t len, uint32_t data) {
 	hwaddr_write(addr, len, data);
 }
 
-uint32_t swaddr_read(swaddr_t addr, size_t len) {
+uint32_t swaddr_read(swaddr_t addr, size_t len, uint8_t sreg) {
 #ifdef DEBUG
 	assert(len == 1 || len == 2 || len == 4);
 #endif
-	return lnaddr_read(addr, len);
+	lnaddr_t lnaddr = seg_translate(addr, len, sreg);
+	return lnaddr_read(lnaddr, len);
 }
 
-void swaddr_write(swaddr_t addr, size_t len, uint32_t data) {
+void swaddr_write(swaddr_t addr, size_t len, uint8_t sreg, uint32_t data) {
 #ifdef DEBUG
 	assert(len == 1 || len == 2 || len == 4);
 #endif
-	lnaddr_write(addr, len, data);
+	lnaddr_t lnaddr = seg_translate(addr, len, sreg);
+	lnaddr_write(lnaddr, len, data);
 }
 

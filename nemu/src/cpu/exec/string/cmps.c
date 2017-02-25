@@ -17,8 +17,8 @@
 #include "cpu/exec/template-start.h"
 make_helper(cmps_b)
 {
-	int dest = swaddr_read(cpu.esi,1);
-	int src  = swaddr_read(cpu.edi,1);
+	int dest = swaddr_read(cpu.esi,1, R_DS);
+	int src  = swaddr_read(cpu.edi,1, R_ES);
 	int result = dest - src;
 	int max = 0x7f;
 	int min = 0x80;
@@ -72,8 +72,8 @@ make_helper(cmps_v)
 		min = 0x80000000;
 	}
 
-	dest = swaddr_read(cpu.esi,size);
-	src  = swaddr_read(cpu.edi,size);
+	dest = swaddr_read(cpu.esi,size, R_DS);
+	src  = swaddr_read(cpu.edi,size, R_ES);
 	result = dest - src;
 	if(cpu.EFLAGS.DF == 0){
 		cpu.esi += size;

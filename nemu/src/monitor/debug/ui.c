@@ -74,6 +74,12 @@ static int cmd_info(char *args){
 		printf("edi\t0x%08x\t%d\n",cpu.edi,cpu.edi);
 		printf("CF=%d\tPF=%d\tZF=%d\tSF=%d\tIF=%d\tDF=%d\tOF=%d\t\n",
 			cpu.EFLAGS.CF,cpu.EFLAGS.PF,cpu.EFLAGS.ZF,cpu.EFLAGS.SF,cpu.EFLAGS.IF,cpu.EFLAGS.DF,cpu.EFLAGS.OF);
+		printf("GDTR\t0x%08x\tGDTR_LIM\t0x%04x\n",cpu.GDTR,cpu.GDTR_LIM);
+		printf("seg name\tvalue(16)\tindex(16)\n",cpu.edi,cpu.edi);
+		printf("es\t0x%08x\t0x%08x\n",cpu.es.val,cpu.es.INDEX);
+		printf("cs\t0x%08x\t0x%08x\n",cpu.cs.val,cpu.cs.INDEX);
+		printf("ss\t0x%08x\t0x%08x\n",cpu.ss.val,cpu.ss.INDEX);
+		printf("ds\t0x%08x\t0x%08x\n",cpu.ds.val,cpu.ds.INDEX);
 		printf("eip\t0x%08x\t%d\n",cpu.eip,cpu.eip);
 		return 0;
 	}
@@ -96,7 +102,7 @@ static int cmd_x(char *args){
 	arg = strtok(NULL," ");
 	result = expr(arg,&state);
 	for(i = 1;i <= num;i++){
-		printf("0x%08x:\t0x%08x\t%d\n",result,swaddr_read(result,4),swaddr_read(result,4));
+		printf("0x%08x:\t0x%08x\t%d\n",result,swaddr_read(result,4,R_DS),swaddr_read(result,4,R_DS));
 		result += 4;
 	}
 	return 0;

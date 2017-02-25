@@ -74,7 +74,7 @@ void cpu_exec(volatile uint32_t n) {
 		}
 #endif
 
-		/* TODO: check watchpoints here. */
+		/* check watchpoints here. */
 
 		/*compute all watchpoint
 		 if value change,set nemu_state=STOP to interupt 

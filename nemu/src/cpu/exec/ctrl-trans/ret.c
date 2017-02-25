@@ -18,10 +18,10 @@ make_helper(ret_i_w)
 {
 	decode_i_w(cpu.eip + 1);
 	if(ops_decoded.is_operand_size_16 == true){
-		cpu.eip = swaddr_read(cpu.esp,2);
+		cpu.eip = swaddr_read(cpu.esp,2, R_SS);
 		cpu.esp = cpu.esp + 2;
 	}else{
-		cpu.eip = swaddr_read(cpu.esp,4);
+		cpu.eip = swaddr_read(cpu.esp,4, R_SS);
 		cpu.esp = cpu.esp + 4;
 	}
 
@@ -32,10 +32,10 @@ make_helper(ret_i_w)
 make_helper(ret)
 {
 	if(ops_decoded.is_operand_size_16 == true){
-		cpu.eip = swaddr_read(cpu.esp,2);
+		cpu.eip = swaddr_read(cpu.esp,2, R_SS);
 		cpu.esp = cpu.esp + 2;
 	}else{
-		cpu.eip = swaddr_read(cpu.esp,4);
+		cpu.eip = swaddr_read(cpu.esp,4, R_SS);
 		cpu.esp = cpu.esp + 4;
 	}
 	print_asm("ret");

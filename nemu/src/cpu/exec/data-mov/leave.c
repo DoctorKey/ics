@@ -6,7 +6,7 @@
 make_helper(leave)
 {
 	cpu.esp = cpu.ebp;
-	cpu.ebp = MEM_R(cpu.esp);
+	cpu.ebp = MEM_R(cpu.esp, R_SS);
 	cpu.esp = cpu.esp + 4;
 
 	print_asm("leave");

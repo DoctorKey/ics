@@ -293,7 +293,7 @@ uint32_t eval(int p,int q)
 		case AND:return val1&&val2;
 		case OR :return val1||val2;
 		case NOR:return !val2;
-		case DEREF :return swaddr_read(val2,4);//the second input may no use
+		case DEREF :return swaddr_read(val2,4,R_DS);//the second input may no use
 		default:
 			printf("the op_type is %c\n",tokens[op].type);
 			assert(0);
@@ -318,7 +318,6 @@ uint32_t expr(char *e, bool *success) {
 
 	*success = true;
 
-	/* TODO: Insert codes to evaluate the expression. */
 	for(i = 0;i < nr_token;i++){
 		if(tokens[i].type == '*' && (i == 0 ||
 			 (tokens[i - 1].type != NUM_10 && tokens[i - 1].type != NUM_16 && tokens[i - 1].type != REG) ))

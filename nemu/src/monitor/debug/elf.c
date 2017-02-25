@@ -22,7 +22,7 @@ extern uint32_t eval_sym(char *str)
 			}
 		}
 	}
-	printf("don't find var!!\n");
+	printf("no find var!!\n");
 	for(i = 1;i <= nr_symtab_entry;i++){
 		if(symtab[i].st_info == 17){
 			printf("var %s : 0x%08x\t%d\n",strtab+symtab[i].st_name,symtab[i].st_value,symtab[i].st_value);
@@ -41,14 +41,14 @@ extern int cmd_bt_elf()
 	uint32_t ebp = cpu.ebp;
 	int i = 0,num;
 	while(ebp != 0){
-		printf("ebp = 0x%08x\tret_addr = 0x%08x\n",ebp,swaddr_read(ebp + 4,4));
-		stack[i].ret_addr = swaddr_read(ebp + 4,4);
-		stack[i].args[0] = swaddr_read(ebp + 8,4);
-		stack[i].args[1] = swaddr_read(ebp + 12,4);
-		stack[i].args[2] = swaddr_read(ebp + 16,4);
-		stack[i].args[3] = swaddr_read(ebp + 20,4);
-		stack[i].prev_ebp = swaddr_read(ebp,4);
-		ebp = swaddr_read(ebp,4);
+		printf("ebp = 0x%08x\tret_addr = 0x%08x\n",ebp,swaddr_read(ebp + 4,4,R_SS));
+		stack[i].ret_addr = swaddr_read(ebp + 4,4,R_SS);
+		stack[i].args[0] = swaddr_read(ebp + 8,4,R_SS);
+		stack[i].args[1] = swaddr_read(ebp + 12,4,R_SS);
+		stack[i].args[2] = swaddr_read(ebp + 16,4,R_SS);
+		stack[i].args[3] = swaddr_read(ebp + 20,4,R_SS);
+		stack[i].prev_ebp = swaddr_read(ebp,4,R_SS);
+		ebp = swaddr_read(ebp,4,R_SS);
 		i++;
 	}
 	num = i;

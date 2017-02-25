@@ -5,7 +5,7 @@
 #include "cpu/exec/template-start.h"
 make_helper(movs_b)
 {
-	swaddr_write(cpu.edi,1,swaddr_read(cpu.esi,1));
+	swaddr_write(cpu.edi, 1, R_ES, swaddr_read(cpu.esi, 1, R_DS));
 	if(cpu.EFLAGS.DF == 0){
 		cpu.edi += 1;
 		cpu.esi += 1;
@@ -24,7 +24,7 @@ make_helper(movs_v)
 	}else{
 		size = 4;
 	}
-	swaddr_write(cpu.edi,size,swaddr_read(cpu.esi,size));
+	swaddr_write(cpu.edi,size, R_ES, swaddr_read(cpu.esi,size, R_DS));
 	if(cpu.EFLAGS.DF == 0){
 		cpu.edi += size;
 		cpu.esi += size;

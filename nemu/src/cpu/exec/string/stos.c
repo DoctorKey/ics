@@ -4,7 +4,7 @@
 #include "cpu/exec/template-start.h"
 make_helper(stos_b)
 {
-	swaddr_write(cpu.edi,1,cpu.gpr[R_EAX]._8[0]);
+	swaddr_write(cpu.edi,1, R_ES, cpu.gpr[R_EAX]._8[0]);
 	if(cpu.EFLAGS.DF == 0)
 		cpu.edi = cpu.edi + 1;
 	else
@@ -20,13 +20,13 @@ make_helper(stos_b)
 make_helper(stos_v)
 {
 	if(ops_decoded.is_operand_size_16 == true){
-		swaddr_write(cpu.edi,2,cpu.gpr[R_EAX]._16);
+		swaddr_write(cpu.edi,2, R_ES, cpu.gpr[R_EAX]._16);
 		if(cpu.EFLAGS.DF == 0)
 			cpu.edi = cpu.edi + 2;
 		else
 			cpu.edi = cpu.edi - 2;
 	}else{
-		swaddr_write(cpu.edi,4,cpu.gpr[R_EAX]._32);
+		swaddr_write(cpu.edi,4, R_ES, cpu.gpr[R_EAX]._32);
 		if(cpu.EFLAGS.DF == 0)
 			cpu.edi = cpu.edi + 4;
 		else
