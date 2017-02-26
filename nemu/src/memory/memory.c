@@ -1,6 +1,9 @@
 #include "common.h"
+#include "cpu/reg.h"
 #include "memory/cache.h"
+#include "../../../lib-common/x86-inc/mmu.h"
 #include "memory/seg.h"
+#include "memory/page.h"
 
 uint32_t dram_read(hwaddr_t, size_t);
 void dram_write(hwaddr_t, size_t, uint32_t);
@@ -32,11 +35,25 @@ void hwaddr_write(hwaddr_t addr, size_t len, uint32_t data) {
 }
 
 uint32_t lnaddr_read(lnaddr_t addr, size_t len) {
-	return hwaddr_read(addr, len);
+	/* data cross the page boundary */
+	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len) / PAGE_SIZE)){
+		printf("read page over bound!\n");
+		assert(0);
+	}else{
+		hwaddr_t hwaddr = page_translate(addr);
+		return hwaddr_read(hwaddr, len);
+	}
 }
 
 void lnaddr_write(lnaddr_t addr, size_t len, uint32_t data) {
-	hwaddr_write(addr, len, data);
+	/* data cross the page boundary */
+	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len) / PAGE_SIZE)){
+		printf("read page over bound!\n");
+		assert(0);
+	}else{
+		hwaddr_t hwaddr = page_translate(addr);
+		hwaddr_write(hwaddr, len, data);
+	}
 }
 
 uint32_t swaddr_read(swaddr_t addr, size_t len, uint8_t sreg) {

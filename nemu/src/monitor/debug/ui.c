@@ -77,6 +77,7 @@ static int cmd_info(char *args){
 			cpu.EFLAGS.CF,cpu.EFLAGS.PF,cpu.EFLAGS.ZF,cpu.EFLAGS.SF,cpu.EFLAGS.IF,cpu.EFLAGS.DF,cpu.EFLAGS.OF);
 		printf("eip\t0x%08x\t%d\n",cpu.eip,cpu.eip);
 		printf("CR0\t0x%08x\t%d\n",cpu.cr0.val,cpu.cr0.val);
+		printf("CR3\t0x%08x\t%d\n",cpu.cr3.val,cpu.cr3.val);
 		printf("-----------------------------------\n");
 		return 0;
 	}
@@ -175,6 +176,22 @@ static int cmd_cache(char *args){
 		return 0;
 	}
 }
+void page_test(lnaddr_t addr);
+static int cmd_page(char *args){
+	char *arg = strtok(NULL," ");
+	bool state;
+	uint32_t result;
+	
+	result = expr(arg,&state);
+	if(state == false){
+		printf("expression compute false!!!\n");
+		return 0;
+	}else{
+		printf("the address is : 0x%0x\n",result);
+		page_test(result);
+		return 0;
+	}
+}
 static int cmd_help(char *args);
 
 static struct {
@@ -193,6 +210,7 @@ static struct {
 	{ "d", "d N: delet N watchpoint",cmd_d},
 	{ "bt", "print the scan chain" ,cmd_bt},
 	{ "cache", "cache ADDR: detect cache" ,cmd_cache},
+	{ "page", "page ADDR: compute page transfer" ,cmd_page},
 };
 
 #define NR_CMD (sizeof(cmd_table) / sizeof(cmd_table[0]))

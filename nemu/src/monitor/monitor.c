@@ -86,7 +86,7 @@ void restart() {
 	/* Read the entry code into memory. */
 	load_entry();
 
-	/* init CR0 real mode*/
+	/* init CR0 real mode and PG = 0 disable paging*/
 	cpu.cr0.val = 0;
 
 	/* init reg according i386 */

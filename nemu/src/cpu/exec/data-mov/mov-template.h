@@ -32,14 +32,14 @@ make_helper(concat(mov_rm2sr_, SUFFIX)) {
 	int len = concat(decode_rm2r_, SUFFIX)(eip + 1);
 	cpu.seg[op_dest->reg].val = op_src->val;
 
-	print_asm_template2();
+	print_asm("mov %s,%%%s", op_src->str, sreg[op_dest->reg]);
 	return len + 1;
 }
 make_helper(concat(mov_sr2rm_, SUFFIX)) {
 	int len = concat(decode_r2rm_, SUFFIX)(eip + 1);
 	OPERAND_W(op_dest, cpu.seg[op_src->reg].val);
 
-	print_asm_template2();
+	print_asm("mov %%%s,%s", sreg[op_dest->reg], op_src->str);
 	return len + 1;
 }
 #endif

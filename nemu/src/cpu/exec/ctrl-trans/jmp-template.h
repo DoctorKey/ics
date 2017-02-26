@@ -20,7 +20,7 @@ make_instr_helper(si)
 make_instr_helper(rm)
 #if DATA_BYTE == 4
 make_helper(ljmp) {
-	/* important!! the order of eip and cs */
+	/* important!! the order of eip and cs ptr16:32*/
 	cpu.eip = instr_fetch(eip + 1, 4);
 	cpu.cs.val = instr_fetch(eip + 5, 2);
 

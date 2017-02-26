@@ -53,6 +53,7 @@ typedef struct {
 		uint16_t limit;
 	}GDTR;
 	CR0 cr0;
+	CR3 cr3;
 
 } CPU_state;
 
@@ -70,5 +71,6 @@ static inline int check_reg_index(int index) {
 extern const char* regsl[];
 extern const char* regsw[];
 extern const char* regsb[];
+extern const char* sreg[];
 
 #endif
