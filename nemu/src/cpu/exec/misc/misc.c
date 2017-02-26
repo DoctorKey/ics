@@ -29,3 +29,9 @@ make_helper(cld) {
 
 	return 1;
 }
+make_helper(std) {
+	cpu.EFLAGS.DF = 1;
+	print_asm("std");
+
+	return 1;
+}

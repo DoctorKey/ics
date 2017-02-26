@@ -20,8 +20,11 @@ void init_page(void) {
 	memset(pdir, 0, NR_PDE * sizeof(PDE));
 
 	/* fill PDEs */
+	/* PHY_MEM / PT_SIZE = 32 so just use 32 PDE item */
 	for (pdir_idx = 0; pdir_idx < PHY_MEM / PT_SIZE; pdir_idx ++) {
+		/* for addr from 0x00000000 to 0x08000000 */
 		pdir[pdir_idx].val = make_pde(ptable);
+		/* for addr from 0xc0000000 to 0xc8000000 */
 		pdir[pdir_idx + KOFFSET / PT_SIZE].val = make_pde(ptable);
 
 		ptable += NR_PTE;

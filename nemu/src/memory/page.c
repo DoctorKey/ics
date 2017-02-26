@@ -10,8 +10,8 @@ hwaddr_t page_translate(lnaddr_t addr)
 		return addr;
 	}
 
-	hwaddr_t dir = addr & 0xffc00000;
-	hwaddr_t page = addr & 0x3ff000;
+	hwaddr_t dir = (addr >> 22) & 0x3ff;
+	hwaddr_t page = (addr >> 12) & 0x3ff;
 	hwaddr_t offset = addr & 0xfff;
 	/* get page directory item */
 	hwaddr_t dir_item_addr = (cpu.cr3.page_directory_base << 12) + (dir << 2);
@@ -22,7 +22,7 @@ hwaddr_t page_translate(lnaddr_t addr)
 	PTE table_item = (PTE)hwaddr_read(table_item_addr, 4);
 
 	/* get physical addr */
-	hwaddr_t phy_addr = (table_item.page_frame << 12) + (offset << 2);
+	hwaddr_t phy_addr = (table_item.page_frame << 12) + offset;
 
 	return phy_addr;
 }
