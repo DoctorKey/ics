@@ -36,7 +36,8 @@ void hwaddr_write(hwaddr_t addr, size_t len, uint32_t data) {
 
 uint32_t lnaddr_read(lnaddr_t addr, size_t len) {
 	/* data cross the page boundary */
-	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len) / PAGE_SIZE)){
+	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len-1) / PAGE_SIZE)){
+		printf("addr = 0x%08x , len = %d\n", addr, len);
 		printf("read page over bound!\n");
 		assert(0);
 	}else{
@@ -47,7 +48,8 @@ uint32_t lnaddr_read(lnaddr_t addr, size_t len) {
 
 void lnaddr_write(lnaddr_t addr, size_t len, uint32_t data) {
 	/* data cross the page boundary */
-	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len) / PAGE_SIZE)){
+	if(cpu.cr0.paging == 1 && (addr / PAGE_SIZE != (addr+len-1) / PAGE_SIZE)){
+		printf("addr = 0x%08x , len = %d\n", addr, len);
 		printf("read page over bound!\n");
 		assert(0);
 	}else{

@@ -266,7 +266,8 @@ uint32_t eval(int p,int q)
 		 */
 		switch(tokens[p].type){
 		case NUM_10:return strtol(tokens[p].str,NULL,10);break;
-		case NUM_16:return strtol(tokens[p].str,NULL,16);break;
+		//case NUM_16:return strtol(tokens[p].str,NULL,16);break;
+		case NUM_16:return strtoul(tokens[p].str,NULL,16);break;
 		case REG:return eval_reg(p);break;
 		case VAR:return eval_var(p);break;
 		default:printf("no number type!! return 0!!\n");
