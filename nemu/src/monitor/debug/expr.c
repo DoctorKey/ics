@@ -324,7 +324,7 @@ uint32_t expr(char *e, bool *success) {
 			 (tokens[i - 1].type != NUM_10 && tokens[i - 1].type != NUM_16 && tokens[i - 1].type != REG) ))
 		{
 			tokens[i].type = DEREF;
-			Log("change tokens[%d].type = DEREF",i);
+//			Log("change tokens[%d].type = DEREF",i);
 		}
 	}
 	return eval(0,nr_token-1);

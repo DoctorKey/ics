@@ -4,16 +4,16 @@
 
 #define SUFFIX b
 #define DATA_TYPE uint8_t
-#define DATA_MAX 0x7f
-#define DATA_MIN 0x80
+#define DATA_MAX 127 //0x7f
+#define DATA_MIN (-128) //0x80
 #define DATA_TYPE_S int8_t
 
 #elif DATA_BYTE == 2
 
 #define SUFFIX w
 #define DATA_TYPE uint16_t
-#define DATA_MAX 0x7fff
-#define DATA_MIN 0x8000
+#define DATA_MAX 32767 //0x7fff
+#define DATA_MIN (-32768) //0x8000
 #define DATA_TYPE_S int16_t
 
 #elif DATA_BYTE == 4

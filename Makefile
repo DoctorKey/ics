@@ -5,7 +5,6 @@
 CC := gcc
 LD := ld
 CFLAGS := -MMD -Wall -Werror -c
-#-I lib_commond/
 
 LIB_COMMON_DIR := lib-common
 NEWLIBC_DIR := $(LIB_COMMON_DIR)/newlib
@@ -54,7 +53,7 @@ clean: clean-cpp
 ##### some convinient rules #####
 
 # USERPROG := obj/testcase/mov
-USERPROG := obj/testcase/mov-c
+USERPROG := obj/testcase/to-lower-case
 #ENTRY := $(USERPROG)
 ENTRY := $(kernel_BIN)
 

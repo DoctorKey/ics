@@ -66,7 +66,8 @@ void cpu_exec(volatile uint32_t n) {
 		cpu.eip += instr_len;
 
 #ifdef DEBUG
-		print_bin_instr(eip_temp, instr_len);
+		printf("eip_temp=0x%x",eip_temp);
+		print_bin_instr(eip_temp, instr_len);//hava bug 
 		strcat(asm_buf, assembly);
 		Log_write("%s\n", asm_buf);
 		if(n_temp < MAX_INSTR_TO_PRINT) {

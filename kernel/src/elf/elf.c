@@ -42,7 +42,6 @@ uint32_t loader() {
 		ph = (void*)buf + elf->e_phoff + i * elf->e_phentsize;
 		if(ph->p_type == PT_LOAD) {
 
-			set_bp();
 			uint32_t seg_paddr = ph->p_vaddr;
 #ifdef IA32_PAGE
 			seg_paddr = mm_malloc(ph->p_vaddr, ph->p_memsz);
@@ -78,7 +77,7 @@ uint32_t loader() {
 #ifdef HAS_DEVICE
 	create_video_mapping();
 #endif
-
+	set_bp();
 	write_cr3(get_ucr3());
 #endif
 
