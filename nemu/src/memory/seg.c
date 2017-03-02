@@ -3,7 +3,7 @@
 #include "../../../lib-common/x86-inc/mmu.h"
 #include "memory/seg.h"
 
-uint32_t lnaddr_read(lnaddr_t addr, size_t len); 
+uint32_t hwaddr_read(hwaddr_t addr, size_t len); 
 lnaddr_t seg_translate(swaddr_t addr, size_t len, uint8_t sreg)
 {
 	/* run in real mode */
@@ -27,8 +27,8 @@ lnaddr_t seg_translate(swaddr_t addr, size_t len, uint8_t sreg)
 	/* get segdesc */
 	uint32_t segdesc_lnaddr = cpu.GDTR.base + seg_choose_index;
 	uint32_t temp[2];
-	temp[0] = lnaddr_read(segdesc_lnaddr,4);
-	temp[1] = lnaddr_read(segdesc_lnaddr + 4,4);
+	temp[0] = hwaddr_read(segdesc_lnaddr,4);
+	temp[1] = hwaddr_read(segdesc_lnaddr + 4,4);
 	SegDesc *segdesc = (SegDesc *)temp;
 
 	lnaddr_t base = (segdesc->base_31_24 << 24) + (segdesc->base_23_16 << 16) + (segdesc->base_15_0);
