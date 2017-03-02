@@ -76,6 +76,7 @@ static void load_entry() {
 
 void init_cache(Cache *this);
 void init_cache_2(Cache_2 *this);
+void init_tlb(TLB *this);
 void restart() {
 	/* Perform some initialization to restart a program */
 #ifdef USE_RAMDISK
@@ -105,4 +106,8 @@ void restart() {
 	/* init cache_2 */
 	cache_2.init = init_cache_2;
 	cache_2.init(&cache_2);
+
+	/* init tlb */
+	tlb.init = init_tlb;
+	tlb.init(&tlb);
 }

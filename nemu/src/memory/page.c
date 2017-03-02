@@ -1,8 +1,10 @@
 #include "cpu/reg.h"
 #include "../../../lib-common/x86-inc/mmu.h"
 #include "memory/page.h"
+#include "memory/tlb.h"
 static bool debug = 0;
 extern uint32_t hwaddr_read(hwaddr_t, size_t);
+TLB tlb;
 hwaddr_t page_translate(lnaddr_t addr)
 {
 	/* enable page when PE == 1 && PG == 1 */
@@ -10,9 +12,18 @@ hwaddr_t page_translate(lnaddr_t addr)
 		return addr;
 	}
 
+	bool state = false;
+	hwaddr_t offset = addr & 0xfff;
+	hwaddr_t phy_page = tlb.check(&tlb, addr, &state);
+	if(state == true){
+		if(debug == 1){
+			printf("hit the tlb\n");
+			printf("phy_addr:\t0x%08x\n", phy_page + offset);
+		}
+		return phy_page + offset;
+	}
 	hwaddr_t dir = (addr >> 22) & 0x3ff;
 	hwaddr_t page = (addr >> 12) & 0x3ff;
-	hwaddr_t offset = addr & 0xfff;
 	if(debug == 1){
 		printf("dir:0x%x  page:0x%x  offset:0x%x\n", dir, page, offset);
 	}
@@ -53,7 +64,7 @@ hwaddr_t page_translate(lnaddr_t addr)
 	if(debug == 1){
 		printf("phy_addr:\t0x%08x\n", phy_addr);
 	}
-
+	tlb.write(&tlb, addr, phy_addr);
 	return phy_addr;
 }
 extern void page_test(lnaddr_t addr)

@@ -3,6 +3,7 @@
 
 #include "common.h"
 #include "cache.h"
+#include "tlb.h"
 
 #define HW_MEM_SIZE (128 * 1024 * 1024)
 

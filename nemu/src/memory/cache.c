@@ -98,13 +98,11 @@ void write_cache_b(Cache *this,hwaddr_t addr,uint8_t data)
 		if(this->line[set][i].target == temp.target && this->line[set][i].valid == true){
 			//hit write through
 			memset(this->line[set][i].buf + temp.index, data, 1);
-//			dram_write(addr, 1, data);
 			write_cache_2_b(&cache_2, addr, data);
 			return;
 		}
 	}
 	//end loop , not hit, not write allocate
-//	dram_write(addr, 1, data);
 	write_cache_2_b(&cache_2, addr, data);
 	return;
 }

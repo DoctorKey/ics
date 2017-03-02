@@ -1,4 +1,5 @@
 #include "cpu/exec/template-start.h"
+#include "memory/tlb.h"
 
 make_helper(movc_r2c_l){
 	/* eip is pointing to the opcode */
@@ -9,6 +10,7 @@ make_helper(movc_r2c_l){
 		cpu.cr0.val = op_src->val;
 	}else if(op_dest->reg ==3){
 		cpu.cr3.val = op_src->val;
+		tlb.clean(&tlb);
 	}else{
 		printf("not cr0 and cr3\n");
 	}
