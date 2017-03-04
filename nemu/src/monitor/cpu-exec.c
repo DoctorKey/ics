@@ -1,6 +1,7 @@
 #include "monitor/monitor.h"
-//#include "monitor/watchpoint.h"
 #include "cpu/helper.h"
+#include "memory/seg.h"
+#include "../../../lib-common/x86-inc/mmu.h"
 #include <setjmp.h>
 
 /* The assembly code of instructions executed is only output to the screen
@@ -15,6 +16,8 @@ int nemu_state = STOP;
 bool check_watchpoint();
 int exec(swaddr_t);
 
+uint8_t i8259_query_intr();
+void i8259_ack_intr(); 
 char assembly[80];
 char asm_buf[128];
 
@@ -36,6 +39,24 @@ void do_int3() {
 	nemu_state = STOP;
 }
 
+/* This function will be called when an 'int' instruction is being executed. */
+void raise_intr(uint8_t NO) {
+	/*TODO: Trigger an interrupt/exception with 'NO'
+	 	That is, use 'NO' to index the IDT.
+		*/
+	uint32_t gatedesc_lnaddr = cpu.IDTR.base + (NO << 3);	
+	uint32_t temp[2];
+	temp[0] = lnaddr_read(gatedesc_lnaddr, 4);
+	temp[1] = lnaddr_read(gatedesc_lnaddr + 4, 4);
+	GateDesc *gatedesc = (GateDesc *)temp;
+	uint32_t offset = (gatedesc->offset_31_16 << 16) + gatedesc->offset_15_0;
+	cpu.cs.val = gatedesc->segment;
+	lnaddr_t entry_addr = seg_translate(offset, 4, R_CS);  
+	cpu.eip = entry_addr;
+
+	/* Jump back to cpu_exec() */
+	longjmp(jbuf, 1);
+}
 /* Simulate how the CPU works. */
 void cpu_exec(volatile uint32_t n) {
 	if(nemu_state == END) {
@@ -88,6 +109,12 @@ void cpu_exec(volatile uint32_t n) {
 #ifdef HAS_DEVICE
 		extern void device_update();
 		device_update();
+		
+		if(cpu.INTR & cpu.EFLAGS.IF) {
+			uint32_t intr_no = i8259_query_intr();
+			i8259_ack_intr();
+			raise_intr(intr_no);
+		}
 #endif
 
 	}

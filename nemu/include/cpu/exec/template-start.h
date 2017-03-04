@@ -30,6 +30,8 @@
 
 #endif
 
+#define STACK_SIZE 4
+
 #define REG(index) concat(reg_, SUFFIX) (index)
 #define REG_NAME(index) concat(regs, SUFFIX) [index]
 

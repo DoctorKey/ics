@@ -53,7 +53,8 @@ clean: clean-cpp
 ##### some convinient rules #####
 
 # USERPROG := obj/testcase/mov
-USERPROG := obj/testcase/to-lower-case
+#USERPROG := obj/testcase/mov-c
+USERPROG := obj/testcase/hello
 #ENTRY := $(USERPROG)
 ENTRY := $(kernel_BIN)
 

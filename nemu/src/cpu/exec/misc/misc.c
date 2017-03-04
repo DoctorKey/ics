@@ -35,3 +35,24 @@ make_helper(std) {
 
 	return 1;
 }
+make_helper(cli) {
+	cpu.EFLAGS.IF = 0;
+	print_asm("cli");
+
+	return 1;
+}
+make_helper(sti) {
+	cpu.EFLAGS.IF = 1;
+	print_asm("sti");
+
+	return 1;
+}
+make_helper(hlt) {
+	while(1){
+		if(cpu.INTR == 1)
+			break;
+	}
+	print_asm("hlt");
+
+	return 1;
+}

@@ -9,6 +9,8 @@ extern char *exec_file;
 void load_elf_tables(int, char *[]);
 void init_regex();
 void init_wp_pool();
+void init_device();
+void init_sdl();
 void init_ddr3();
 
 FILE *log_fp = NULL;
@@ -37,6 +39,10 @@ void init_monitor(int argc, char *argv[]) {
 
 	/* Initialize the watchpoint pool. */
 	init_wp_pool();
+
+	/* Initialize the device and sdl */
+	init_device();
+	init_sdl();
 
 	/* Display welcome message. */
 	welcome();
